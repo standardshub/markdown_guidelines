@@ -2,9 +2,9 @@
   "title": "MD2HTML Guidelines",
   "url": "",
   "logo": {
-    "light": "/logo-light.svg",
-    "dark": "/logo-dark.svg"
+    "light": "logo-light.svg",
+    "dark": "logo-dark.svg"
   },
-  "github": "jpradocueva/md2html_guidelines",
-  "twitter": "jpradocueva"
+  "github": "jpradocueva/md2ht_guidelines",
+  "twitter": "@jpradocueva"
 }
