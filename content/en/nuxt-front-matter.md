@@ -1,7 +1,7 @@
 ---
 title: Front Matter
 description: ''
-position: 320
+position: 420
 category: Nuxt
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Setup
 description: ''
-position: 310
+position: 410
 category: Nuxt
 ---
 

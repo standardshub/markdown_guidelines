@@ -2,8 +2,8 @@
 title: Code Box
 menuTitle: Code Sandbox
 description: 'Live example of Nuxt Content docs theme on CodeSandbox.'
-position: 330
-category: Nuxt
+position: 450
+category: Nuxt App
 csb_link: https://codesandbox.io/embed/nuxt-content-docs-theme-playground-inwxb?hidenavigation=1&theme=dark
 fullscreen: true
 ---

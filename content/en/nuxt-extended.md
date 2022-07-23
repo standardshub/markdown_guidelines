@@ -1,8 +1,8 @@
 ---
 title: Extended Syntax
 description: ''
-position: 330
-category: Nuxt
+position: 430
+category: Nuxt App
 ---
 
 These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
