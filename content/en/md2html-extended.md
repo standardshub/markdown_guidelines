@@ -699,7 +699,7 @@ Resource&nbsp;Instance
 
 * Don't use in an HTML construct e.g. between a `<table>` tag and its corresponding end tag.
 
-### 
+### Constructors Involving Formatting
 
 **DON'Ts**
 
