@@ -1,10 +1,12 @@
 ---
 title: Basic Syntax
 description: ''
-position: 100
+position: 120
 category: Common Markdown
 ---
 
+## Common Markdown
+This section is dedicated to describe markdown constructors that are normally used in the creation of Technical Documents. 
 
 ## Titles
 This is how a `title` is displayed:
