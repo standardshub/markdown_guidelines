@@ -2,7 +2,7 @@
 title: Front Matter
 description: ''
 position: 420
-category: Nuxt
+category: Nuxt App
 ---
 
 #### Required fields
