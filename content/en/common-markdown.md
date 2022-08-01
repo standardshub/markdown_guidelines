@@ -3,7 +3,6 @@ title: Basic Syntax
 description: ''
 position: 100
 category: Common Markdown
-
 ---
 
 
