@@ -1,10 +1,10 @@
 {
-  "title": "GitHub Markdown Guidelines",
+  "title": "Markdown Guidelines",
   "url": "",
   "logo": {
     "light": "logo-light.svg",
     "dark": "logo-dark.svg"
   },
-  "github": "standardshub/github_markdown_guidelines",
+  "github": "standardshub/markdown_guidelines",
   "twitter": "@jpradocueva1"
 }
