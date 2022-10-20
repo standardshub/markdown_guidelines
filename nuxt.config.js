@@ -7,6 +7,6 @@ export default theme({
     primaryColor: '#E24F55'
   },
   router: { 
-    base: '/md2html_guidelines/' 
+    base: '/github_markdown_guidelines/' 
   }
 })

@@ -1,10 +1,10 @@
 {
-  "title": "MD2HTML Guidelines",
+  "title": "GitHub Markdown Guidelines",
   "url": "",
   "logo": {
     "light": "logo-light.svg",
     "dark": "logo-dark.svg"
   },
-  "github": "jpradocueva/md2html_guidelines",
+  "github": "standardshub/github_markdown_guidelines",
   "twitter": "@jpradocueva1"
 }
