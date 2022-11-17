@@ -4,49 +4,49 @@
   "description": "## Setup",
   "icons": [
     {
-      "src": "/markdown_guidelines/_nuxt/icons/icon_64x64.a604ff.png",
+      "src": "/_nuxt/icons/icon_64x64.a604ff.png",
       "sizes": "64x64",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/markdown_guidelines/_nuxt/icons/icon_120x120.a604ff.png",
+      "src": "/_nuxt/icons/icon_120x120.a604ff.png",
       "sizes": "120x120",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/markdown_guidelines/_nuxt/icons/icon_144x144.a604ff.png",
+      "src": "/_nuxt/icons/icon_144x144.a604ff.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/markdown_guidelines/_nuxt/icons/icon_152x152.a604ff.png",
+      "src": "/_nuxt/icons/icon_152x152.a604ff.png",
       "sizes": "152x152",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/markdown_guidelines/_nuxt/icons/icon_192x192.a604ff.png",
+      "src": "/_nuxt/icons/icon_192x192.a604ff.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/markdown_guidelines/_nuxt/icons/icon_384x384.a604ff.png",
+      "src": "/_nuxt/icons/icon_384x384.a604ff.png",
       "sizes": "384x384",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/markdown_guidelines/_nuxt/icons/icon_512x512.a604ff.png",
+      "src": "/_nuxt/icons/icon_512x512.a604ff.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/markdown_guidelines/?standalone=true",
+  "start_url": "/?standalone=true",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#E24F55",
