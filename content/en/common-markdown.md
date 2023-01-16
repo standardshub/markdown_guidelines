@@ -36,6 +36,13 @@ This is how a `bold text` is written is written in markdown:
 ```md
 **bold text**
 ```
+or
+
+```md
+__underscores__
+```
+
+__underscores__
 
 ### Italic
 
@@ -52,6 +59,19 @@ or
 ```md
 _italicized text_
 ```
+
+### Bold & Italic
+
+**DO's**
+
+* Combined bold and italic text with:
+
+```md
+**asterisks and _underscores_**
+```
+
+**asterisks and _underscores_**
+
 ### Strikethrough Text
 
 * Strikethrough uses two tildes:
@@ -82,7 +102,8 @@ This is how a `table` is written in markdown:
 or
 Insert basic HTML table
 
-## Blockquote
+## Paragraph
+### Blockquote
 
 This is how a `blockquote` is displayed:
 
@@ -93,6 +114,15 @@ This is how a `blockquote` is written in markdown:
 ```md
 > blockquote
 ```
+### Code
+This is how `code` is displayed:
+`code`
+
+This is how `code` is written in markdown:
+```md
+`code`
+```
+
 ## Lists
 ### Ordered List
 This is how an `ordered list` is displayed:
@@ -120,25 +150,18 @@ This is how an `unordered list` is written in markdown:
 - Second item
 - Third item
 ```
-## Code
-This is how `code` is displayed:
-`code`
 
-This is how `code` is written in markdown:
-```md
-`code`
-```
+### Nested List
 
-## Horizontal Rule
+**DO's**
 
-
-This is how a `horizontal rule` is displayed:
-
----
-This is how a `horizontal rule` is written in markdown:
+Next nested level achieved by indenting one/two spaces to the right e.g.
 
 ```md
----
+1. First Item
+2. Second item
+  * Nested item one
+  * Nested item two
 ```
 
 ## Link

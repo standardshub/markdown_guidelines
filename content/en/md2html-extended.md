@@ -1,11 +1,11 @@
 ---
-title: Extended Syntax
+title: Extended Markdown
 description: ''
 position: 220
 category: MD2HTML App
 ---
 
-## Index
+## Document Structure
 ### Front Page
 The document `index.md` contains the information displayed on first page of the document. See [Index.md](/md2html-setup#index) for further details.
 
@@ -19,6 +19,19 @@ The md2html tool automatically adds a header to generated PDFs
 
 ### Footer
 The md2html tool automatically adds a header to generated PDFs
+
+
+### Horizontal Rule
+
+
+This is how a `horizontal rule` is displayed:
+
+---
+This is how a `horizontal rule` is written in markdown:
+
+```md
+---
+```
 
 ### Indexes
 
@@ -35,10 +48,50 @@ It is constructed automatically by the conversion tool and only appears in the H
 * Avoid using special characters in the titles. It makes difficult to establish links inside of the document to a particular section.
 * Try to create titles for section, figures and tables that are short and without special characters
 
+## Formatting
+
+### Ignore Markdown Formatting
+
+**DO's**
+
+* To ignore markdown formatting insert a  backslash `\` character before the markdown character e.g.
+
+```md
+\[RFC6655\]
+```
+
+\[RFC6655\]
+
+### Page Break
+
+**DO's**
+
+* To introduce a page break insert:
+
+```md
+{:page-break}
+```
+
+* Only use at the start of a line.
+* Use where markdown is expected.
+* Ensure `{:page-break}` is followed by a blank line
+
+**DON'Ts**
+
+* Don't use in an HTML construct e.g. between a `<table>` tag and its corresponding end tag.
+
+### Constructors Involving Formatting
+
+**DON'Ts**
+
+* Formatting instructions should be done using CSS and NOT md or html
+* No style should be introduced on any of the HTML constructors
+
 ## Headings
 ### Section Numbers
 * Section numbers don't exist in the markdown version of the documents
 
+### Appendixes
 
 #### DOs
 * The highest section title level starts with two #s, i.e. `##` (level 1)
@@ -59,307 +112,6 @@ It is constructed automatically by the conversion tool and only appears in the H
     * This will create problems with any reference links due to the duplications
 * DON'T add a section, figure or table numbers manually
 
-## Insert
-### XML Files
-#### File Name without Object Version
-
-* File Name: "LWM2M_Access_Control.xml"
-
-
-        {:supp1 Repository_Name/[Branch_Name | Release] File_Name.xml}
-
-Examples:
-
-        {:supp1 objects-lwm2m/dev LWM2M_Access_Control.xml}
-
-* repository: "objects-lwm2m"
-* branch: `dev`
-* File Name: "LWM2M_Access_Control.xml"
-
-        {:supp1 objects-lwm2m/v1_1 LWM2M_Access_Control.xml}
-
-    * repository: "objects-lwm2m"
-    * release: `v1_1`
-    * File Name: "LWM2M_Access_Control.xml"
-
-#### File Name: "OMA-SUP-XML_LWM2M_Access_Control-V1_Z.xml"
-
-    {:supp Repository_Name/[Branch_Name] [Folder_Name]/File_Name.xml}
-
-* This constructor inserts an XML file inside of an HTML document as a table:
-
-**Examples:**
-
-    {:supp Repository_Name/[Branch_Name] [Folder_Name]/File_Name.xml}
-
-Example of `development` branch:
-
-    {:supp LwM2M-Objects/development Device/OMA-SUP-XML_LWM2M_Device-V1_0_Z.xml}
-
-* Inserts the latest revision of LwM2M Device v1.0.Z Object inside of the HTML document. The Object file is stored in the LwM2M-Object repository, in the "development" branch and inside of a folder called "Device".
-
-Example of `master` branch:
-
-    {:supp LwM2M-Objects/ Device/OMA-SUP-XML_LWM2M_Device-V1_0_Z.xml}
-
-* Inserts the latest revision of LwM2M Device v1.0.Z Object inside of the HTML document. The Object file is stored in the LwM2M-Object repository, in the "master" branch (which is omitted) and inside of a folder called "Device".
-
-#### Insert content from any file type (.xml; .xsd; .html; etc)
-
-    {:supp3 [repository]/[branch/tag] [with folder |without folder]/[filename.extension]}
-
-**Examples:**
-
-**Option A - with folder**
-
-In this case the schema inserted is located in:
-* Repository: "Test_LwM2M_v1_1"
-* Branch: `schema`
-* Folder: "SUP"
-* File name: "OMA-SUP-XML_LWM2M.xsd"
-
-        {:supp3 Test_LwM2M_v1_1/schema SUP/OMA-SUP-XML_LWM2M.xsd}
-
-**Option B - without folder**
-
-In this case the schema inserted is located in:
-* Repository: "Test_LwM2M_v1_1"
-* Branch: `schema`
-* Folder: none (file at the root)
-* File name: LWM2M.xsd
-
-        {:supp3 Test_LwM2M_v1_1/schema LWM2M.xsd}
-
-**Option C - with folder**
-
-In this case the schema inserted is located in:
-* Repository: "LwM2M"
-* Branch: `master`
-* Folder: "SUP"
-* File name: OMA-SUP-XML_LWM2M.xsd
-
-        {:supp3 LwM2M/master SUP/OMA-SUP-XML_LWM2M.xsd}
-
-**C.1 now omitting the name of the branch "master"**
-
-        {:supp3 LwM2M/ SUP/OMA-SUP-XML_LWM2M.xsd}
-
-**Option D - in a tag, with folder**
-
-In this case the schema inserted is located in:
-
-* Repository: "LwM2M"
-* Branch: `v1_1-20180710-A` (this is a release tag)
-* Folder: "SUP"
-* File name: OMA-SUP-XML_LWM2M.xsd
-
-        {:supp3 LwM2M/v1_1-20180710-A SUP/OMA-SUP-XML_LWM2M.xsd}
-
-### Figures
-
-Figures MUST be referenced using HTML
-
-* Images need to be uploaded to the `images` folder.
-* In a GitHub repository, each technical document should have its own "images" folder.
-* The location of the figure is controlled by the src parameter
-* See Creation of `.svg` Images
-    * Please follow these guidelines when creating a new image from scratch
-* The code to insert inside of the document to represent an image follows:
-
-
-        <figure>
-            <img src="images/image-name.svg" alt="Figure-Title">
-            <figcaption>Figure-Title</figcaption>
-        </figure>
-
-
-<alert>Depending on the line thickness in figures, upon the SVG scaling factor and the browser zoom setting some lines may not be displayed when viewed from GitHub. 
-This can be mitigated by increasing the browser zoom setting. </alert>
-
-**DO's**
-
-* Use HTML constructor as listed here
-* Use the same title as a value for `<figcaption>` and `alt` elements
-    * The `alt` value will show the title of the figure in case the figure is not displayed correctly
-* Ensure contiguous text in a line is in a single text box and not multiple text boxes. 
-* If multiple text boxes are used then when the figures are converted to PDF the figures may appear incorrect.
-
-**DON'Ts**
-
-* DON'T use markdown constructors to insert a `figure`
-* DON'T use parameters to centre or define the `width` and `height` of the `figure`. The md2html tool will apply a predefined CSS that contains all the necessary style to ensure the best possible PDF quality
-* DON'T insert a link inside in the `Figure-Title` inside of the `<figcaption>` element. The link won't work.
-
-### Tables
-
-**DO´s**
-
-Tables MUST be constructed in HTML only:
-
-```html
-<table class="max-width-50">
-  <caption>Table Title</caption>
-  <thead>
-    <tr class="height-20">
-        <th class="width-10">Header 1</th>
-        <th>Header 2</th><th>Header3</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>Cell 1-1</td> <td>Cell 1-2</td> 
-        <td>Cell 1-3</td>
-    </tr>
-    <tr>
-        <td colspan="2">Cell 3-1 & 3-2</td> 
-        <td>Cell 3-3</td>
-    </tr>
-    <tr>
-        <td>Cell 4-1</td> 
-        <td rowspan="2">Cell 4-2 & 5-2</td> 
-        <td>Cell 4-3</td>
-    </tr>
-    <tr>
-        <td>Cell 5-1</td> 
-        <td>Cell 5-2</td>
-    </tr>
-</tbody>
-</table>
-```
-
-* Use `<caption>` to provide table title or name
-* Use `<thead>` to define the title of the columns
-* Use `<rowspan>` to merge cells on the same column among different raws
-* Use `<colspan>` to merge cells on the same raw among different columns
-* Use `<class="xxx">` to indicate the width of each column
-
-* Should the text in a table need to be formatted (e.g. strong, or emphasis) then use the appropriate HTML tags e.g.
-
-**Deleted text**	
-
-```html
-<del>...</del>
-```
-**Emphasised text**
-
-```html
-<em>...</em>
-```
-**Marked/highlighted text**	
-
-```html
-<mark>...</mark>
-```
-
-**Important text**	
-
-```html
-<strong>...</strong>
-```
-
-**Ordered List**
-
-* type="1" - numbers (default)
-* type="A" - uppercase letters
-* type="a" - lowercase letters
-* type="I" - uppercase roman numbers
-* type="i" - lowercase roman numbers
-
-```html
-<ol type="a">
-    <li>Requirements Document</li>
-    <li>Core TS</li>
-    <li>Transport TS</li>
-</ol>
-```
-
-
-**References** 
-* e.g. for sections within the document the text must match heading
-
-```html
-<a href="">Identifiers</a>
-```
-
-**Single Line Break**	
-
-```html
-<br>
-```
-
-**Small text**	
-
-```html
-<small>...</small>
-```
-
-
-**Subscripted Text**	
-
-```html
-<sub>...</sub>
-```
-
-**Superscripted Text**
-
-```html
-<sup>...</sup>
-```
-
-**Unordered List**
-
-```html
-<ul>
-  <li>Requirements Document</li>
-  <li>Core TS</li>
-  <li>Transport TS</li>
-</ul>
-```
-
-**DON'Ts**
-
-* DON'T use markdown tables
-
-
-### Unordered List
-
-**DO's**
-
-Use (*) for:
-
-```md
-Use (*)
-* First item
-* Second item
-* Third item
-* Forth itemDOs
-```
-
-### Ordered List
-
-**DO's**
-
-Use (numbers immediately followed by ".")
-
-```md
-1. First item
-2. Second item
-3. Third item
-4. Forth item
-```
-### Nested List
-
-**DO's**
-
-Next nested level achieved by indenting one/two spaces to the right e.g.
-
-```md
-1. First Item
-2. Second item
-  * Nested item one
-  * Nested item two
-```
-
 ## Paragraph
 ### Paragraph
 
@@ -371,7 +123,6 @@ Next nested level achieved by indenting one/two spaces to the right e.g.
 
 * Do not use `<p>` tag in normal body text
 
-## Preformated Text
 ### Preformated Text
 
 **DO's**
@@ -418,9 +169,230 @@ Warning:
 Syntax highlighting may be displayed differently after md is converted to HTML & PDF.
 </alert>
 
-## Links
+###  Line Breaks
 
-### Links to a Section
+**DO's**
+
+* Paragraph one with some text.
+* Another line immediately afterwards will be displayed starting
+on the same line as paragraph two.
+
+```md
+Paragraph one.
+
+Paragraph two. 
+Another line immediately afterwards will be displayed starting on the same line as paragraph two.
+```
+This is how it is displayed:
+
+Paragraph one.
+
+Paragraph two. 
+Another line immediately afterwards will be displayed starting on the same line as paragraph two.
+
+### Block Quote
+
+**DO's**
+
+* To indent and mark text use:
+
+```md
+> OMA LwM2M
+```
+
+> OMA LwM2M
+
+### Non-breaking Space
+
+**DO's**
+
+* To insert a non-breaking space use:
+
+```md
+&nbsp;
+```
+
+For example:
+
+```md
+Resource&nbsp;Instance
+```
+
+Resource&nbsp;Instance
+
+## Figures
+
+Figures MUST be referenced using HTML
+
+* Images need to be uploaded to the `images` folder.
+* In a GitHub repository, each technical document should have its own "images" folder.
+* The location of the figure is controlled by the src parameter
+* See Creation of `.svg` Images
+    * Please follow these guidelines when creating a new image from scratch
+* The code to insert inside of the document to represent an image follows:
+
+
+        <figure>
+            <img src="images/image-name.svg" alt="Figure-Title">
+            <figcaption>Figure-Title</figcaption>
+        </figure>
+
+
+<alert>Depending on the line thickness in figures, upon the SVG scaling factor and the browser zoom setting some lines may not be displayed when viewed from GitHub. 
+This can be mitigated by increasing the browser zoom setting. </alert>
+
+**DO's**
+
+* Use HTML constructor as listed here
+* Use the same title as a value for `<figcaption>` and `alt` elements
+    * The `alt` value will show the title of the figure in case the figure is not displayed correctly
+* Ensure contiguous text in a line is in a single text box and not multiple text boxes. 
+* If multiple text boxes are used then when the figures are converted to PDF the figures may appear incorrect.
+
+**DON'Ts**
+
+* DON'T use markdown constructors to insert a `figure`
+* DON'T use parameters to centre or define the `width` and `height` of the `figure`. The md2html tool will apply a predefined CSS that contains all the necessary style to ensure the best possible PDF quality
+* DON'T insert a link inside in the `Figure-Title` inside of the `<figcaption>` element. The link won't work.
+
+## HTML Tables
+
+**DO´s**
+
+Tables MUST be constructed in HTML only:
+
+```html
+<table class="max-width-50">
+  <caption>Table Title</caption>
+  <thead>
+    <tr class="height-20">
+        <th class="width-10">Header 1</th>
+        <th>Header 2</th><th>Header3</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Cell 1-1</td> <td>Cell 1-2</td> 
+        <td>Cell 1-3</td>
+    </tr>
+    <tr>
+        <td colspan="2">Cell 3-1 & 3-2</td> 
+        <td>Cell 3-3</td>
+    </tr>
+    <tr>
+        <td>Cell 4-1</td> 
+        <td rowspan="2">Cell 4-2 & 5-2</td> 
+        <td>Cell 4-3</td>
+    </tr>
+    <tr>
+        <td>Cell 5-1</td> 
+        <td>Cell 5-2</td>
+    </tr>
+</tbody>
+</table>
+```
+
+* Use `<caption>` to provide table title or name
+* Use `<thead>` to define the title of the columns
+* Use `<rowspan>` to merge cells on the same column among different raws
+* Use `<colspan>` to merge cells on the same raw among different columns
+* Use `<class="xxx">` to indicate the width of each column
+
+* Should the text in a table need to be formatted (e.g. strong, or emphasis) then use the appropriate HTML tags e.g.
+
+### HTML Text
+#### Deleted text
+
+```html
+<del>...</del>
+```
+#### Emphasised text
+
+```html
+<em>...</em>
+```
+#### Marked/highlighted text
+
+```html
+<mark>...</mark>
+```
+
+#### Important text
+
+```html
+<strong>...</strong>
+```
+
+#### References
+* e.g. for sections within the document the text must match heading
+
+```html
+<a href="">Identifiers</a>
+```
+
+#### Single Line Break	
+
+```html
+<br>
+```
+
+#### Small text	
+
+```html
+<small>...</small>
+```
+
+
+#### Subscripted Text
+
+```html
+<sub>...</sub>
+```
+
+#### Superscripted Text
+
+```html
+<sup>...</sup>
+```
+
+### HTML Lists
+
+#### Ordered List
+
+* type="1" - numbers (default)
+* type="A" - uppercase letters
+* type="a" - lowercase letters
+* type="I" - uppercase roman numbers
+* type="i" - lowercase roman numbers
+
+```html
+<ol type="a">
+    <li>Requirements Document</li>
+    <li>Core TS</li>
+    <li>Transport TS</li>
+</ol>
+```
+
+#### Unordered List
+
+```html
+<ul>
+  <li>Requirements Document</li>
+  <li>Core TS</li>
+  <li>Transport TS</li>
+</ul>
+```
+
+**DON'Ts**
+
+* DON'T use markdown tables
+
+#### Nested List
+[TBD]
+
+## Links to
+
+### Section
 
 **DO's**
 
@@ -446,7 +418,7 @@ For links to sections and subsections from the body of the text use:
 
     * `&lt;PROPERTIES&gt;` to represent `<PROPERTIES>`
 
-### Links to a Section From Within a Table
+### Section From Within a Table
 
 **DOs**
 
@@ -469,7 +441,7 @@ For example:
 * Don't use this construct for links to a section or subsection in the body of the text
 * The links will not work properly in GitHub & markdown; however, the links should function when HTML generated by the md2html tool is viewed in a browser
 
-### Link to a Figure
+### Figure
 
 **DOs**
 
@@ -504,7 +476,7 @@ For example:
 
 ~~figure~~[Figure The protocol stack of the LwM2M Enabler]()
 
-### Links to a Figure From Within a Table
+### Figure From Within a Table
 
 **DOs**
 
@@ -535,7 +507,7 @@ For example:
 * Make sure that the word `figure` is not duplicated by adding it inside and outside of the anchor.
 
 
-### Links to a Table
+### Table
 
 **DO's**
 
@@ -564,7 +536,7 @@ For example:
 * The links will not work properly in GitHub & markdown; however, the links should function when HTML generated by the md2html tool is viewed in a browser
 * The title of the table will contain the word "Table", make sure it is not duplicated that word.
 
-### Links to a Table From Within Another Table
+### Table From Within Another Table
 
 **DO's**
 
@@ -624,157 +596,100 @@ https://www.omaspecworks.org/
 ```html
 <a href="http://www.openmobilealliance.org/">URL:http://www.openmobilealliance.org/</a>
 ```
+## XML Files
+### :supp
+**File Name: "OMA-SUP-XML_LWM2M_Access_Control-V1_Z.xml"**
 
-### Important Text
+    {:supp Repository_Name/[Branch_Name] [Folder_Name]/File_Name.xml}
 
-**DO´s**
+* This constructor inserts an XML file inside of an HTML document as a table:
 
-* Strong emphasis, aka bold, with:
+**Examples:**
 
-```md
-**asterisks**
-```
+    {:supp Repository_Name/[Branch_Name] [Folder_Name]/File_Name.xml}
 
-**asterisks**
+Example of `development` branch:
 
-or
+    {:supp LwM2M-Objects/development Device/OMA-SUP-XML_LWM2M_Device-V1_0_Z.xml}
 
-```md
-__underscores__
-```
+* Inserts the latest revision of LwM2M Device v1.0.Z Object inside of the HTML document. The Object file is stored in the LwM2M-Object repository, in the "development" branch and inside of a folder called "Device".
 
-__underscores__
+Example of `master` branch:
 
-### Emphasised Text
+    {:supp LwM2M-Objects/ Device/OMA-SUP-XML_LWM2M_Device-V1_0_Z.xml}
 
-**DO's**
+* Inserts the latest revision of LwM2M Device v1.0.Z Object inside of the HTML document. The Object file is stored in the LwM2M-Object repository, in the "master" branch (which is omitted) and inside of a folder called "Device".
 
-* Emphasis, aka italics, with:
+### :supp1
+**File Name without Object Version**
 
-```md
-*asterisks*
-```
- 
- *asterisks*
+* File Name: "LWM2M_Access_Control.xml"
 
-or
 
-```md
-_underscores_
-```
+        {:supp1 Repository_Name/[Branch_Name | Release] File_Name.xml}
 
- _underscores_
+Examples:
 
-### Combined Important & Emphasised Text
+        {:supp1 objects-lwm2m/dev LWM2M_Access_Control.xml}
 
-**DO's**
+* repository: "objects-lwm2m"
+* branch: `dev`
+* File Name: "LWM2M_Access_Control.xml"
 
-* Combined strong and emphasized text with:
+        {:supp1 objects-lwm2m/v1_1 LWM2M_Access_Control.xml}
 
-```md
-**asterisks and _underscores_**
-```
+    * repository: "objects-lwm2m"
+    * release: `v1_1`
+    * File Name: "LWM2M_Access_Control.xml"
 
-**asterisks and _underscores_**
+### :supp3
+**Insert content from any file type (.xml; .xsd; .html; etc)**
 
-### Strikethrough Text
+    {:supp3 [repository]/[branch/tag] [with folder |without folder]/[filename.extension]}
 
-**DOs**
+**Examples:**
 
-* Strikethrough uses two tildes:
+**Option A - with folder**
 
-```md
-~~Scratch this.~~
-```
+In this case the schema inserted is located in:
+* Repository: "Test_LwM2M_v1_1"
+* Branch: `schema`
+* Folder: "SUP"
+* File name: "OMA-SUP-XML_LWM2M.xsd"
 
-~~Scratch this.~~
+        {:supp3 Test_LwM2M_v1_1/schema SUP/OMA-SUP-XML_LWM2M.xsd}
 
-###  Line Breaks
+**Option B - without folder**
 
-**DO's**
+In this case the schema inserted is located in:
+* Repository: "Test_LwM2M_v1_1"
+* Branch: `schema`
+* Folder: none (file at the root)
+* File name: LWM2M.xsd
 
-* Paragraph one with some text.
-* Another line immediately afterwards will be displayed starting
-on the same line as paragraph two.
+        {:supp3 Test_LwM2M_v1_1/schema LWM2M.xsd}
 
-```md
-Paragraph one.
+**Option C - with folder**
 
-Paragraph two. 
-Another line immediately afterwards will be displayed starting on the same line as paragraph two.
-```
-This is how it is displayed:
+In this case the schema inserted is located in:
+* Repository: "LwM2M"
+* Branch: `master`
+* Folder: "SUP"
+* File name: OMA-SUP-XML_LWM2M.xsd
 
-Paragraph one.
+        {:supp3 LwM2M/master SUP/OMA-SUP-XML_LWM2M.xsd}
 
-Paragraph two. 
-Another line immediately afterwards will be displayed starting on the same line as paragraph two.
+**C.1 now omitting the name of the branch "master"**
 
-### Block Quote
+        {:supp3 LwM2M/ SUP/OMA-SUP-XML_LWM2M.xsd}
 
-**DO's**
+**Option D - in a tag, with folder**
 
-* To indent and mark text use:
+In this case the schema inserted is located in:
 
-```md
-> OMA LwM2M
-```
+* Repository: "LwM2M"
+* Branch: `v1_1-20180710-A` (this is a release tag)
+* Folder: "SUP"
+* File name: OMA-SUP-XML_LWM2M.xsd
 
-> OMA LwM2M
-
-### Non-breaking Space
-
-**DO's**
-
-* To insert a non-breaking space use:
-
-```md
-&nbsp;
-```
-
-For example:
-
-```md
-Resource&nbsp;Instance
-```
-
-Resource&nbsp;Instance
-
-## Formatting
-
-### Ignore Markdown Formatting
-
-**DO's**
-
-* To ignore markdown formatting insert a  backslash `\` character before the markdown character e.g.
-
-```md
-\[RFC6655\]
-```
-
-\[RFC6655\]
-
-### Page Break
-
-**DO's**
-
-* To introduce a page break insert:
-
-```md
-{:page-break}
-```
-
-* Only use at the start of a line.
-* Use where markdown is expected.
-* Ensure `{:page-break}` is followed by a blank line
-
-**DON'Ts**
-
-* Don't use in an HTML construct e.g. between a `<table>` tag and its corresponding end tag.
-
-### Constructors Involving Formatting
-
-**DON'Ts**
-
-* Formatting instructions should be done using CSS and NOT md or html
-* No style should be introduced on any of the HTML constructors
+        {:supp3 LwM2M/v1_1-20180710-A SUP/OMA-SUP-XML_LWM2M.xsd}
