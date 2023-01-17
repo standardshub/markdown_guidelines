@@ -32,20 +32,29 @@ This is how `code` is written in markdown:
 `code`
 ```
 
-## Preformated Text
+## Preformatted Text
 
-* Use (```) to indicate the beginning and end of preformatted text block
-    * Add the markup name on the first, e.g. (```xml)
-* Use (```) with caution. Line breaks are not automatically inserted so in PDF text may not be fully displayed
+* Use (```) to indicate the beginning and end of preformatted text block.
+* Use (```) with caution. Line breaks are not automatically inserted so in PDF text may not be fully displayed.
 
-```md
+This is how `preformatted text` is displayed:
+```
 Text in this position
     other text dented to the right
   other text dented to the left
 
           other text
 ```
+Preformatted text written in markdown:
+````
+```
+Text in this position
+    other text dented to the right
+  other text dented to the left
 
+          other text
+```
+````
 ## Code With Syntax Highlighing
 
 Use e.g. (```XML) to displayed XML.
