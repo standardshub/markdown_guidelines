@@ -4,10 +4,13 @@ description: ''
 position: 150
 category: MD2HTML App
 ---
-## Paragraph Best Practicees
+## Paragraph
 
+**DO's**
 * Use the "Enter" key to separate two paragraphs.
-* Do not use `<p>` tag in normal body text
+* Inside of a HTML table use the element `<p>` text, text `</p>`.
+**DON'Ts**
+* Do not use `<p>` tag in normal body text unless the paragraph is inside of a table (see above).
 
 ## Blockquote
 
