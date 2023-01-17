@@ -2,11 +2,17 @@
 title: Embed Files
 description: ''
 position: 197
-category: Constructors
+category: MD2HTML App
 ---
 
 ## XML Files
-### :supp
+You can embed an external file, e.g. `.xml`, `.json`, etc into a markdown document using the constructors defined in this section:
+
+* [:SUPP]()
+* [:SUPP1]()
+* [:SUPP3]()
+
+### :SUPP
 **File Name: "OMA-SUP-XML_LWM2M_Access_Control-V1_Z.xml"**
 
     {:supp Repository_Name/[Branch_Name] [Folder_Name]/File_Name.xml}
@@ -29,7 +35,7 @@ Example of `master` branch:
 
 * Inserts the latest revision of LwM2M Device v1.0.Z Object inside of the HTML document. The Object file is stored in the LwM2M-Object repository, in the "master" branch (which is omitted) and inside of a folder called "Device".
 
-### :supp1
+### :SUPP1
 **File Name without Object Version**
 
 * File Name: "LWM2M_Access_Control.xml"
@@ -51,7 +57,7 @@ Examples:
     * release: `v1_1`
     * File Name: "LWM2M_Access_Control.xml"
 
-### :supp3
+### :SUPP3
 **Insert content from any file type (.xml; .xsd; .html; etc)**
 
     {:supp3 [repository]/[branch/tag] [with folder |without folder]/[filename.extension]}

@@ -2,8 +2,12 @@
 title: Paragraph
 description: ''
 position: 150
-category: Constructors
+category: MD2HTML App
 ---
+## Paragraph Best Practicees
+
+* Use the "Enter" key to separate two paragraphs.
+* Do not use `<p>` tag in normal body text
 
 ## Blockquote
 
@@ -25,20 +29,7 @@ This is how `code` is written in markdown:
 `code`
 ```
 
-
-## Paragraph
-
-**DO's**
-
-* Use the "Enter" key to separate two paragraphs.
-
-**DON'Ts**
-
-* Do not use `<p>` tag in normal body text
-
 ## Preformated Text
-
-**DO's**
 
 * Use (```) to indicate the beginning and end of preformatted text block
     * Add the markup name on the first, e.g. (```xml)
@@ -53,8 +44,6 @@ Text in this position
 ```
 
 ## Code With Syntax Highlighing
-
-**DO´s**
 
 Use e.g. (```XML) to displayed XML.
 
@@ -82,9 +71,7 @@ Warning:
 Syntax highlighting may be displayed differently after md is converted to HTML & PDF.
 </alert>
 
-##  Line Breaks
-
-**DO's**
+## Line Breaks
 
 * Paragraph one with some text.
 * Another line immediately afterwards will be displayed starting
@@ -105,8 +92,6 @@ Another line immediately afterwards will be displayed starting on the same line 
 
 ## Block Quote
 
-**DO's**
-
 * To indent and mark text use:
 
 ```md
@@ -116,8 +101,6 @@ Another line immediately afterwards will be displayed starting on the same line 
 > OMA LwM2M
 
 ## Non-breaking Space
-
-**DO's**
 
 * To insert a non-breaking space use:
 

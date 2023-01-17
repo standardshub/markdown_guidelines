@@ -2,12 +2,9 @@
 title: Text
 description: ''
 position: 140
-category: Constructors
+category: MD2HTML App
 ---
 
-## Introduction
-
-## Text
 This section describes markdown constructors that can be used in documements stored in GitHub. These documents can be rendered in GitHub or using the [MD2HTML](https://markdown.standardshub.io/md2html-overview) application. 
 ## Bold
 This is how a `bold text` is displayed:

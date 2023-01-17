@@ -2,12 +2,10 @@
 title: Table
 description: ''
 position: 170
-category: Constructors
+category: MD2HTML App
 ---
 
-## Introduction
-
-## Table
+## Table in Markdown
 
 This is how a `table` is displayed:
 
@@ -27,11 +25,9 @@ This is how a `table` is written in markdown:
 or
 Insert basic HTML table
 
-## HTML Tables
+## Tables in HTML
 
-**DO´s**
-
-Tables MUST be constructed in HTML only:
+It is recommended to build `tables` using HTML constructors only. This is because tables will be added automatically to the `Index` section, as long as the `table` is defined with with the `caption` property.
 
 ```html
 <table class="max-width-50">

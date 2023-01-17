@@ -1,10 +1,10 @@
 ---
-title: NuxtJS
+title: NUXTJS App
 description: ''
 position: 30
 category: Introduction
 ---
-
+## Introduction
 The purpose of this document is to provide hands-on information on creating and deploying the documentation type website using the [nuxt-content-docs](https://www.npmjs.com/package/@nuxt/content-theme-docs) template package and [GitHub pages](https://pages.github.com/) capabilities.
 
 The goal is to provide more detailed information in order to deliver the promise of the `nuxt-content-docs`:

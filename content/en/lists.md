@@ -2,11 +2,10 @@
 title: Lists
 description: ''
 position: 160
-category: Constructors
+category: MD2HTML App
 ---
 
-## Introduction
-## Lists
+## Lists in Markdown
 ### Ordered List
 This is how an `ordered list` is displayed:
 1. First item
@@ -36,8 +35,6 @@ This is how an `unordered list` is written in markdown:
 
 ### Nested List
 
-**DO's**
-
 Next nested level achieved by indenting one/two spaces to the right e.g.
 
 ```md
@@ -47,7 +44,7 @@ Next nested level achieved by indenting one/two spaces to the right e.g.
   * Nested item two
 ```
 
-## HTML Lists
+## Lists in HTML
 
 ### Ordered List
 
