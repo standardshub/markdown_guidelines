@@ -90,16 +90,6 @@ Paragraph one.
 Paragraph two. 
 Another line immediately afterwards will be displayed starting on the same line as paragraph two.
 
-## Block Quote
-
-* To indent and mark text use:
-
-```md
-> OMA LwM2M
-```
-
-> OMA LwM2M
-
 ## Non-breaking Space
 
 * To insert a non-breaking space use:
