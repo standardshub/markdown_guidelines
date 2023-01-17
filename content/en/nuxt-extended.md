@@ -1,5 +1,5 @@
 ---
-title: Extended Syntax
+title: Extended Constructors
 description: ''
 position: 430
 category: Nuxt App
