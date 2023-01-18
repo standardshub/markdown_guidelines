@@ -13,12 +13,12 @@ category: MD2HTML App
 
 This is how a `blockquote` is displayed:
 
-> blockquote
+> This is a blockquote text.
 
 This is how a `blockquote` is written in markdown:
 
 ```md
-> blockquote
+> This is a blockquote text.
 ```
 ## Code
 This is how `code` is displayed:
