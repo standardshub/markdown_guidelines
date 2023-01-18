@@ -1,19 +1,17 @@
 ---
 title: Setup
 description: ''
-position: 210
+position: 105
 category: MD2HTML App
 ---
 
-## Setup
-### Index.md
+## Index.md
 
 This file `index.md` MUST exist inside of the folder for each Technical  document. 
 
 <img width="645" alt="image" src="https://user-images.githubusercontent.com/3258579/182251495-78ce12dd-a36b-4e5c-8684-6c34cfc83c6f.png">
 
 Example of content inside of a `index.md`
-
 
         ---
         title: "Lightweight Machine to Machine Technical Specification: Core"
