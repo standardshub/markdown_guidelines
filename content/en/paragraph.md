@@ -16,12 +16,12 @@ category: MD2HTML App
 
 This is how a `blockquote` is displayed:
 
-> blockquote
+> This is a blockquote text.
 
 This is how a `blockquote` is written in markdown:
 
 ```md
-> blockquote
+> This is a blockquote text.
 ```
 ## Code
 This is how `code` is displayed:
@@ -119,16 +119,6 @@ Paragraph one.
 
 Paragraph two. 
 Another line immediately afterwards will be displayed starting on the same line as paragraph two.
-
-## Block Quote
-
-* To indent and mark text use:
-
-```md
-> OMA LwM2M
-```
-
-> OMA LwM2M
 
 ## Non-breaking Space
 
