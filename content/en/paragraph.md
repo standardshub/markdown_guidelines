@@ -92,10 +92,21 @@ Syntax highlighting may be displayed differently after md is converted to HTML &
 
 ## Line Breaks
 
-* Paragraph one with some text.
-* Another line immediately afterwards will be displayed starting
-on the same line as paragraph two.
+**DO's**  
+* Paragraph one with two spaces after.  
+  Paragraph two.
 
+* Paragraph one with the HTML tag after.`<br>`  
+  Paragraph two. 
+
+**DON'Ts**  
+* Paragraph one with a backslash after. `\`  
+  Paragraph two.
+
+* Paragraph one with nothing after.  
+  Paragraph two.
+
+Example:
 ```md
 Paragraph one.
 
