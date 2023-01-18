@@ -66,4 +66,4 @@ It is recommended to build `tables` using HTML constructors only. This is becaus
 * Use `<colspan>` to merge cells on the same raw among different columns
 * Use `<class="xxx">` to indicate the width of each column
 
-* Should the text in a table need to be formatted (e.g. strong, or emphasis) then use the appropriate HTML tags e.g.
+* Inside of a HTML is not possible to use markdown constructors; they won't be rendered correctly. If you need to add text formatting such as (e.g. strong|bold, or emphasis|italic) then refer to the [`text`](text) section of this document.
