@@ -5,8 +5,7 @@ position: 105
 category: MD2HTML App
 ---
 
-## Setup
-### Index.md
+## Index.md
 
 This file `index.md` MUST exist inside of the folder for each Technical  document. 
 
