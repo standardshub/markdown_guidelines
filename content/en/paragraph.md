@@ -38,6 +38,7 @@ This is how `code` is written in markdown:
 * Use (```) with caution. Line breaks are not automatically inserted so in PDF text may not be fully displayed.
 
 This is how `preformatted text` is displayed:
+
 ```
 Text in this position
     other text dented to the right
@@ -45,12 +46,16 @@ Text in this position
 
           other text
 ```
+
 Preformatted text written in markdown:
+
 ````
-```
+```md
 Text in this position
     other text dented to the right
   other text dented to the left
+```
+````
 
 ## Code With Syntax Highlighting
 
@@ -58,6 +63,7 @@ Text in this position
 To add syntax highlighting, specify a code type next to the backticks <code>(```)</code> before the fenced code block.
 
 Displayed e.g. XML code block:
+
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <LWM2M xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
@@ -69,7 +75,6 @@ Displayed e.g. XML code block:
                                 <LWM2MVersion>1.1</LWM2MVersion>
                </Object>
 </LWM2M>
-
 ```
 This is how XML code block is written in markdown:
 
