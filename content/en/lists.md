@@ -7,12 +7,12 @@ category: MD2HTML App
 
 ## Lists in Markdown
 ### Ordered List
-This is how an `ordered list` is displayed:
+This is how an `Ordered list` is displayed:
 1. First item
 2. Second item
 3. Third item
 
-This is how an `ordered list` is written in markdown:
+This is how an `Ordered list` is written in markdown:
 ```md
 1. First item
 2. Second item
@@ -20,13 +20,13 @@ This is how an `ordered list` is written in markdown:
 ```
 
 ### Unordered List
-This is how an `unordered list` is displayed:
+This is how an `Unordered list` is displayed:
 
 - First item
 - Second item
 - Third item
 
-This is how an `unordered list` is written in markdown:
+This is how an `Unordered list` is written in markdown:
 ```md
 - First item
 - Second item
@@ -35,15 +35,26 @@ This is how an `unordered list` is written in markdown:
 
 ### Nested List
 
-Next nested level achieved by indenting one/two spaces to the right e.g.
+Next nested level achieved by indenting two spaces to the right e.g.
 
-```md
-1. First Item
+1. First item
 2. Second item
-  * Nested item one
-  * Nested item two
-```
+   * Nested item 1
+   * Nested item 2
+     1. Nested item 1
+     2. Nested item 2
+3. Third item
 
+This is how an `Nested list` is written in markdown:
+```md
+1. First item
+2. Second item
+   * Nested item 1
+   * Nested item 2
+     1. Nested item 1
+     2. Nested item 2
+3. Third item
+```
 ## Lists in HTML
 
 ### Ordered List
@@ -54,16 +65,25 @@ Next nested level achieved by indenting one/two spaces to the right e.g.
 * type="I" - uppercase roman numbers
 * type="i" - lowercase roman numbers
 
+This is `Ordered list` written in HTML:
 ```html
-<ol type="a">
+<ol type = "1">
     <li>Requirements Document</li>
     <li>Core TS</li>
     <li>Transport TS</li>
 </ol>
 ```
+Displayed `Ordered list`:
+
+<ol type="a">
+<li>Requirements Document</li>
+<li>Core TS</li>
+<li>Transport TS</li>
+</ol>
 
 ### Unordered List
 
+This is `Unordered list` written in HTML:
 ```html
 <ul>
   <li>Requirements Document</li>
@@ -71,10 +91,53 @@ Next nested level achieved by indenting one/two spaces to the right e.g.
   <li>Transport TS</li>
 </ul>
 ```
+Displayed `Unordered list`:
+
+<ul>
+  <li>Requirements Document</li>
+  <li>Core TS</li>
+  <li>Transport TS</li>
+</ul>
 
 **DON'Ts**
 
 * DON'T use markdown tables
 
 ### Nested List
-[TBD]
+
+This is an example of `Nested list` (list inside of list) written in HTML:
+
+```html
+<ul>
+  <li>Requirements Document
+     <ul>
+        <li>Doc 1</li>
+        <li>Doc 2</li>
+      </ul>
+  </li>
+  <li>Core TS
+     <ol>
+      <li>TS 1</li>
+      <li>TS 2</li>
+     </ol>
+  </li>
+  <li>Transport TS</li>
+</ul>
+```
+Displayed `Nested list`:
+
+<ul>
+  <li>Requirements Document
+     <ul>
+        <li>Doc 1</li>
+        <li>Doc 2</li>
+      </ul>
+  </li>
+  <li>Core TS
+     <ol>
+      <li>TS 1</li>
+      <li>TS 2</li>
+     </ol>
+  </li>
+  <li>Transport TS</li>
+</ul>
