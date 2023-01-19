@@ -88,3 +88,20 @@ Equivalent to `bold` in markdown
 ```html
 <strong>...</strong>
 ```
+### Small text	
+
+```html
+<small>...</small>
+```
+
+### Subscripted Text
+
+```html
+<sub>...</sub>
+```
+
+### Superscripted Text
+
+```html
+<sup>...</sup>
+```
