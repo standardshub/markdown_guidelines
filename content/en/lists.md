@@ -75,10 +75,10 @@ This is `Ordered list` written in HTML:
 ```
 Displayed `Ordered list`:
 
-<ol type="a">
-<li>Requirements Document</li>
-<li>Core TS</li>
-<li>Transport TS</li>
+<ol type = "1">
+  <li>Requirements Document</li>
+  <li>Core TS</li>
+  <li>Transport TS</li>
 </ol>
 
 ### Unordered List
