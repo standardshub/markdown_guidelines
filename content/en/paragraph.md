@@ -104,6 +104,12 @@ Syntax highlighting may be displayed differently after md is converted to HTML &
 
 ## Line Breaks
 
+### Single Line Break	
+
+```html
+<br>
+```
+
 **DO's**  
 * Paragraph one with two spaces after.  
   Paragraph two.
