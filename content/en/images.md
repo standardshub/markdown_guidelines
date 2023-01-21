@@ -21,7 +21,8 @@ or
 ![image](https://user-images.githubusercontent.com/3258579/124534970-30fdbe00-ddca-11eb-8a95-ca7dd82eba41.png)
 
 ```
-In addition of using this markdown constructor, is also possible to use a HTML constuctor [`<figure>`](md2html-extended#figures). This constructor, allows to integrate the image in the `Table of Figures` as discrabed in [`Index`](md2html-extended#indexes) and applying the same `Cascade Style Sheets` across all the figures. See next section for further details.
+
+In addition of using this markdown constructor, is also possible to use a HTML constuctor [`<figure>`](md2html-extended#figures). This constructor, allows to integrate the image in the `Table of Figures` as described in [`Index`](md2html-extended#indexes) and applying the same `Cascade Style Sheets` across all the figures. See next section for further details.
 
 ## Extended Images
 
@@ -29,9 +30,9 @@ Figures MUST be referenced using HTML
 
 * Images need to be uploaded to the `images` folder.
 * In a GitHub repository, each technical document should have its own "images" folder.
-* The location of the figure is controlled by the src parameter
-* If you are using [Inkscape](https://inkscape.org/) for creating `.svg` images, then please use  [`guidelines`](./SVG_Guidelines2.docx.pdf)<base target="_blank"> when creating a new image from scratch.
 
+* The location of the figure is controlled by the src parameter.
+* If you are using [Inkscape](https://inkscape.org/) for creating `.svg` images, then please use  [`guidelines`](./SVG_Guidelines2.docx.pdf)<base target="_blank"> when creating a new image from scratch.
 * The code to insert inside of the document to represent an image follows:
 
 
