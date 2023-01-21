@@ -6,7 +6,9 @@ category: MD2HTML App
 ---
 
 This section describes markdown constructors that can be used in documements stored in GitHub. These documents can be rendered in GitHub or using the [MD2HTML](https://markdown.standardshub.io/md2html-overview) application. 
-## Bold
+
+## Test in Markdown
+### Bold
 This is how a `bold text` is displayed:
 
 **bold text**´
@@ -24,7 +26,7 @@ __underscores__
 
 __underscores__
 
-## Italic
+### Italic
 
 This is how an `italicized text` is displayed:
 
@@ -40,7 +42,7 @@ or
 _italicized text_
 ```
 
-## Bold & Italic
+### Bold & Italic
 
 **DO's**
 
@@ -52,7 +54,7 @@ _italicized text_
 
 **asterisks and _underscores_**
 
-## Strikethrough Text
+### Strikethrough Text
 
 * Strikethrough uses two tildes:
 
@@ -61,3 +63,45 @@ _italicized text_
 ```
 
 ~~Scratch this.~~
+
+## Text in HTML
+These HTML tags are only used when the text is inside of an HTML table.
+
+### Deleted text
+Equivalent to `strikethrough` in markdown.
+```html
+<del>...</del>
+```
+### Emphasised text
+Equivalent to `italic` in markdown.
+```html
+<em>...</em>
+```
+### Marked/highlighted text
+It is `highlight` text. It doesn't have an equivalent in markdown.
+```html
+<mark>...</mark>
+```
+
+### Important text
+Equivalent to `bold` in markdown
+```html
+<strong>...</strong>
+```
+### Small text	
+
+```html
+<small>...</small>
+```
+
+### Subscripted Text
+
+```html
+<sub>...</sub>
+```
+
+### Superscripted Text
+
+```html
+<sup>...</sup>
+```
