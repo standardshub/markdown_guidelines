@@ -30,8 +30,8 @@ Figures MUST be referenced using HTML
 * Images need to be uploaded to the `images` folder.
 * In a GitHub repository, each technical document should have its own "images" folder.
 * The location of the figure is controlled by the src parameter
-* See Creation of `.svg` Images
-    * Please follow these [`guidelines`](./SVG_Guidelines2.docx.pdf)<base target="_blank"> when creating a new image from scratch.
+* If you are using [Inkscape](https://inkscape.org/) for creating `.svg` images, then please use  [`guidelines`](./SVG_Guidelines2.docx.pdf)<base target="_blank"> when creating a new image from scratch.
+
 * The code to insert inside of the document to represent an image follows:
 
 
