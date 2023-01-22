@@ -4,12 +4,13 @@ description: ''
 position: 1
 category: Introduction
 ---
-This wiki provides two different ways of constructing documents using Git/GitHub.
+This wiki provides guidelines to build documents using two different types of applications:
 
-This document contains guidelines on how to write markdown files that will be displayed by two different type of applications:
+* [MD2HTML](./) Application, or
+* [NUXTJS]() Application
 
-* MD2HTML Application
-* NUXTJS Application
+You will learn how to write and configure documents that can be rendered by one of these two applications. The documents 
+
 
 * The sections in this wiki describe how to configure these two applications, and how to use markdown and HTML constructors that can be correctly interpreted by the applications.
 
