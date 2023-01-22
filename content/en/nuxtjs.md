@@ -4,7 +4,6 @@ description: ''
 position: 30
 category: Introduction
 ---
-## Introduction
 The purpose of this document is to provide hands-on information on creating and deploying the documentation type website using the [nuxt-content-docs](https://www.npmjs.com/package/@nuxt/content-theme-docs) template package and [GitHub pages](https://pages.github.com/) capabilities.
 
 The goal is to provide more detailed information in order to deliver the promise of the `nuxt-content-docs`:
@@ -15,13 +14,24 @@ The goal is to provide more detailed information in order to deliver the promise
 
 To create a project you can utilise `yarn` or `npm` package manager.
 
-```bash
+<code-group>
+  <code-block label="Yarn" active>
+
+  ```bash
 # Yarn
 yarn create nuxt-content-docs <project-name>
+  ```
+  </code-block>
+  <code-block label="NPM">
 
+  ```bash
 # NPX
 npx create-nuxt-content-docs <project-name>
-```
+  ```
+  </code-block>
+</code-group>
+
+
 > Note: `<project-name>` is the name of the repository already created in GitHub.
 
 ### Example 
@@ -47,7 +57,7 @@ If you have already installed `node` then `npm` is already available. [Yarn](htt
 ❯ Yarn
   Npm
 ```
-After selecting the package manager, `npm` in this example, the installation of dependencies will start.
+After selecting the package manager, `npm` the installation of dependencies starts.
 
 ```bash
   Installing packages with npm
@@ -64,17 +74,17 @@ In order to verify that everything is working as expected run the following comm
 npm run dev
 ```
 
-The above command will build the `development` version of this project and run the web server making this web documentation available on your local machine at `http://localhost:3000/` address. Navigate your web browser to this URL and you should see the `nuxt/content` initial documentation page with the information:
+The above command will build the `development` version of this project and run a web server making this web documentation available on your local machine at `http://localhost:3000/` address. Navigate your web browser to this URL and you should see the `nuxt/content` initial documentation page:
 
 > Your documentation has been created successfully!
 
 ## Link Local with Upstream Repository
 
-> At this moment you have created a local repository, e.g. `md2html_guidelines` and you want to sync this content with the upstream repository, `https://github.com/jpradocueva/md2html_guidelines.git`, which was created in a separate step.
+> At this moment you have created a local repository, e.g. `markdown_guidelines` and you want to sync this content with the upstream repository, `https://github.com/jpradocueva/md2html_guidelines.git`, which was created in a separate step.
 
-Add the remote repository in GitHub as a remote `upstream`
+Add the remote repository in GitHub as a remote `origin`
 
-`git remote add upstream https://github.com/jpradocueva/md2html_guidelines.git`
+`git remote add origin https://github.com/jpradocueva/md2html_guidelines.git`
 
 Then, commit all the changes to your local host:
 
@@ -84,11 +94,11 @@ Then, commit all the changes to your local host:
 
 Then, push the content from the local repository upstream (assuming the branch is called `master`).
 
-`git push --set-upstream upstream master`
+`git push --set-upstream origin master`
 
 Then, confirm that the setup is correct by running:
 
-`git remote show upstream`
+`git remote show origin`
 
 The printout of this command should indicate that the local repository is connected to the upstream.
 
@@ -96,7 +106,7 @@ The printout of this command should indicate that the local repository is connec
 
 The project customizations are achieved by adjusting `nuxt.config.js`, `tailwind.config.js` and `content/settings.json` file.
 
-> Note: each time that `nuxt.config.js` file is modified, you may need to force a reset in the GitHub pages Settings by switching off and on the content in the `Source` section. See below.
+> Note: each time that `nuxt.config.js` file is modified, you may need to force a reset in the GitHub pages Settings by switching `off` and `on` the content in the `Source` section. See below.
 
 ### nuxt.config.js
 
@@ -119,7 +129,7 @@ Use the [settings](https://content.nuxtjs.org/themes/docs#settings) file in the 
 
 Writing the content is the main activity. There are several basic aspects of [writing documentation in Markdown](https://content.nuxtjs.org/writing/#markdown) format.
 
-In addition, the Nuxt content documentation project provides additional capabilities for more elaborate presentation elements. The *theme* provides some general Vue.js [components](https://content.nuxtjs.org/themes/docs#components) that you can use directly in your markdown content.
+In addition, the `Nuxt` content documentation project provides additional capabilities for more elaborate presentation elements. The *theme* provides some general Vue.js [components](https://content.nuxtjs.org/themes/docs#components) that you can use directly in your markdown content.
 
 Content should be organized in files based on supported [locals](https://content.nuxtjs.org/themes/docs#locales) and desired [routing](https://content.nuxtjs.org/themes/docs#routing). The *theme* default local is `en` so the documents for this local are located in `./content/en/` folder.
 
