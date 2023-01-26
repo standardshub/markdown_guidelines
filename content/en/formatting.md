@@ -4,10 +4,9 @@ description: ''
 position: 120
 category: MD2HTML App
 ---
+This section explains how to use constructors to manage the document formats.
 
-## Constructors Involving Formatting
-
-* Formatting instructions should be done using CSS and NOT md or html
+* Formatting instructions should be done using CSS and NOT `md` or `html`
 * No style should be introduced on any of the HTML constructors
 
 ## Ignore Markdown Formatting
