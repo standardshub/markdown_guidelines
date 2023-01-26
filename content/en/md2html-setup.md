@@ -66,6 +66,7 @@ Example of an `index.yaml` file for MD2HTML v2.x:
         documentName: "OMA-TS-LightweightM2M_Core-V1_2-20201110-A"
         watermark: "DRAFT"
         files:
+        - License.md
         - OMA-TS-LightweightM2M_Core.md
         - Appendix_A.md
         - Appendix_B.md
@@ -86,3 +87,5 @@ Example of an `index.yaml` file for MD2HTML v2.x:
 * `copyrightDate`:         the copyright date now is defined by this property
 * `logo`:                          this allows each document to have its own logo
 * `watermark`:               this property inserts a watermark inside of the PDF. Possible values are: "DRAFT",  "CANDIDATE", "HISTORIC", "DEPRECATED", "PRE-APPROVED", "APPROVED".
+
+<alert>In MD2HTML v2.0, the `License.md` contains the license defined for that particular document. It can be inserted at front of the list of files or at the botoom.</alert>
