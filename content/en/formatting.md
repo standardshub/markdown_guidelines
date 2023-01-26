@@ -4,14 +4,14 @@ description: ''
 position: 120
 category: MD2HTML App
 ---
-This section explains how to use constructors to manage the document formats.
+This section explains how to use constructors to manage document formats.
 
-* Formatting instructions should be done using CSS and NOT `md` or `html`
+* Formatting instructions should be done using CSS and NOT `MD` or `HTML.`
 * No style should be introduced on any of the HTML constructors
 
 ## Ignore Markdown Formatting
 
-* To ignore markdown formatting insert a  backslash `\` character before the markdown character e.g.
+* To ignore markdown formatting, insert a  backslash `\` character before the markdown character e.g.
 
 ```md
 \[RFC6655\]
