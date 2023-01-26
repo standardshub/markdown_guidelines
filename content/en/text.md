@@ -74,7 +74,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 ### Bold
 * This is how `strong,` the equivalent to `bold` in markdown, is written in `HTML.`
 
-```HTML
+```html
 <strong>MD2HTML</strong>
 ```
 * This is how bold text is rendered in HTML:
