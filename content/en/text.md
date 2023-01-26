@@ -83,7 +83,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 ### Italic 
 * This is how `emphasized` text, the equivalent to `italic` in markdown, is written in `HTML.`
 
-```HTML
+```html
 <em>MD2HTML</em>
 ```
 * This is how it is displayed:
@@ -92,7 +92,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 ### Bold & Italic 
 * This is how `strong` and `emphasized` text, the equivalent to `bold` and `italic` in markdown, is written in `HTML.`
 
-```HTML
+```html
 <strong>MD2HTML and <em>MD2HTML</em></strong>
 ```
 * This is how it is displayed:
@@ -101,7 +101,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 ### Highlighted
 * This is how `highlighted` text is written in `HTML`:
 
-```HTML
+```html
 <mark>MD2HTML</mark>
 ```
 * This is how it is rendered:
@@ -110,7 +110,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 
 ### Strikethrough
 * This is how `strikethrough` text is written in `HTML.`
-```HTML
+```html
 <del>MD2HTML</del>
 ```
 * This is how it is rendered in `HTML`:
@@ -118,7 +118,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 
 ### Small	
 * This is how `small` text is written in `HTML`:
-```HTML
+```html
 <small>MD2HTML</small>
 ```
 * This is how it is rendered:
@@ -126,7 +126,7 @@ Compared with MD2HTML, <small>MD2HTML</small> looks like this.
 
 ### Subscripted
 * This is how `subscripted` text is written in `HTML`:
-```HTML
+```html
 <sub>MD2HTML</sub>
 ```
 * This is how it is rendered:
@@ -134,7 +134,7 @@ Compared with other text <sub>MD2HTML</sub>, this is how it looks.
 
 ### Superscripted
 * This is how `superscripted` text is written in `HTML`:
-```HTML
+```html
 <sup>MD2HTML</sup>
 ```
 * This is how it is rendered:
