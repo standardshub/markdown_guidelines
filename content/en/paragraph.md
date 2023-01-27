@@ -113,18 +113,14 @@ End a line with two or more spaces or `(<br>)`, and then type return to create a
 ```
 
 **DO's**  
-* Paragraph one with two spaces after.  
-  Paragraph two.
+* Add two spaces after first paragraph to separate from the next.
 
-* Paragraph one with the HTML tag after.`<br>`  
-  Paragraph two. 
+* Add HTML tag `<br>` after first paragraph to separate from the next.
 
 **DON'Ts**  
-* Paragraph one with a backslash after. `\`  
-  Paragraph two.
+* Type a backslash `\` between paragraphs. 
 
-* Paragraph one with nothing after.  
-  Paragraph two.
+* Nothing between adjacent paragraphs. 
 
 Example:
 ```md
