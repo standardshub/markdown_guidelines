@@ -106,6 +106,8 @@ Syntax highlighting may be displayed differently after md is converted to HTML &
 
 ### Single Line Break	
 
+End a line with two or more spaces or `(<br>)`, and then type return to create a line break or new line.
+
 ```html
 <br>
 ```
@@ -126,7 +128,7 @@ Syntax highlighting may be displayed differently after md is converted to HTML &
 
 Example:
 ```md
-Paragraph one.
+Paragraph one. <br>
 
 Paragraph two. 
 Another line immediately afterwards will be displayed starting on the same line as paragraph two.
