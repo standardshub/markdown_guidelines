@@ -22,39 +22,43 @@ or
 
 ```
 
-In addition of using this markdown constructor, is also possible to use a HTML constuctor [`<figure>`](md2html-extended#figures). This constructor, allows to integrate the image in the `Table of Figures` as described in [`Index`](md2html-extended#indexes) and applying the same `Cascade Style Sheets` across all the figures. See next section for further details.
+In addition to using this markdown constructor, it is possible to use an `HTML` constructor `<figure>`. This constructor integrates the image in the `Table of Figures` as described in [`Document Structure`](document_structure#indexes)  and applies the same `Cascade Style Sheets` across all the figures. 
+
+Please take a look at the next section for further details.
 
 ## Extended Images
 
-Figures MUST be referenced using HTML
+Figures MUST be referenced using `HTML`.
 
 * Images need to be uploaded to the `images` folder.
-* In a GitHub repository, each technical document should have its own "images" folder.
-
-* The location of the figure is controlled by the src parameter.
+* For MD2HTML assembly correctly the images, each technical document should have its own `images` folder.
+* The src parameter controls the location of the `image``.
 * If you are using [Inkscape](https://inkscape.org/) for creating `.svg` images, then please use  [`guidelines`](./SVG_Guidelines2.docx.pdf)<base target="_blank"> when creating a new image from scratch.
-* The code to insert inside of the document to represent an image follows:
+
+<alert>When incorporating images created by [Inkscape](https://inkscape.org/), some lines may not be displayed correctly in GitHub. This depends on the image's lines thickness, the SVG scaling factor, and the browser zoom setting.
+This problem can be mitigated by increasing the browser zoom setting. </alert>
+
+* The `HTML` code to insert an `image` is:
+
+```html
+<figure>
+    <img src="images/image-name.svg" alt="Figure-Title">
+    <figcaption>Figure-Title</figcaption>
+</figure>
+```
 
 
-        <figure>
-            <img src="images/image-name.svg" alt="Figure-Title">
-            <figcaption>Figure-Title</figcaption>
-        </figure>
-
-
-<alert>Depending on the line thickness in figures, upon the SVG scaling factor and the browser zoom setting some lines may not be displayed when viewed from GitHub. 
-This can be mitigated by increasing the browser zoom setting. </alert>
 
 ### DO's
 
-* Use HTML constructor as listed here.
+* Use the `HTML` constructor as listed above.
 * Use the same title as a value for `<figcaption>` and `alt` elements.
-    * The `alt` value will show the title of the figure in case the figure is not displayed correctly.
-* Ensure contiguous text in a line is in a single text box and not multiple text boxes. 
-* If multiple text boxes are used then when the figures are converted to PDF the figures may appear incorrect.
+    * The `alt` value will show the title of the figure in case the figure is not displayed correctly. Search Engines also use it.
+* Ensure contiguous text is in a single text box, not multiple text boxes. 
+    * If multiple text boxes are used, the figures may render incorrectly in the PDF version.
 
 ### DON'Ts
 
-* DON'T use markdown constructors to insert a `figure`
-* DON'T use parameters to centre or define the `width` and `height` of the `figure`. The md2html tool will apply a predefined CSS that contains all the necessary style to ensure the best possible PDF quality
-* DON'T insert a link inside of the `<figcaption>` element (`Figure-Title`) as the link won't work.
+* DON'T use markdown constructors to insert a `figure`.
+* DON'T use parameters to center or to define the `width` and `height` of the `figure`. The `MD2HTML` tool will apply a predefined `CSS` that contains all the necessary styles to ensure the best possible `PDF` quality
+* DON'T insert a link inside the `<figcaption>` element (`Figure-Title`) as the link won't work.
