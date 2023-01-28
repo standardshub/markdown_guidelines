@@ -6,20 +6,20 @@ category: MD2HTML App
 ---
 
 ## XML Files
-You can embed an external file, e.g. `.xml`, `.json`, etc into a markdown document using the constructors defined in this section:
+You can embed an external file, e.g., `.xml`, `.json`, etc., into a markdown document using the constructors defined in this section:
 
 * [:SUPP](#:supp)
 * [:SUPP1](#:supp1)
 * [:SUPP3](#:supp3)
 
 ### :SUPP
-This is the instruction, inserts an `XML` file inside of an `HTML` document as a table:
+This instruction inserts an `XML` file inside of an `HTML` document as a table:
 ```md
 {:supp [Repository_Name]/[Branch_Name] [Folder_Name]/[File_Name.xml]}
 ```
 
 #### Any Branch Example
-In this example the file to insert is in a branch different from `master`.
+In this example, the file to insert is in a branch different from `master`.
 
 ```md
 {:supp LwM2M-Objects/development Device/OMA-SUP-XML_LWM2M_Device-V1_0_Z.xml}
@@ -30,21 +30,21 @@ In this example the file to insert is in a branch different from `master`.
 * `Foler_Name`:      **Device**
 * `File_Name`:       **OMA-SUP-XML_LWM2M_Device-V1_0_Z.xml**
 
-* Inserts the latest revision of the **LwM2M Device v1.0.Z** object inside of the `HTML` document. The Object file is stored in the **LwM2M-Object** repository, in the **development** branch and inside of a folder called **Device**.
+* Inserts the latest revision of the **LwM2M Device v1.0.Z** object inside of the `HTML` document. The Object file is stored in the **LwM2M-Object** repository, in the **development** branch, and inside a folder called **Device**.
 
 #### 'master' Branch Example
-In this example the `XML` file is in the `master` branch, the name `master` can be omitted.
+In this example, the `XML` file is in the `master` branch, and the name `master` can be omitted.
 
 ```md
 {:supp [Repository_Name]/ [Folder_Name]/[File_Name.xml]}
 ```
 * The `Branch_Name` property is omitted.
-* The rest of properties are the same as above.
+* The rest of the properties are the same as above.
 
 ```md
 {:supp LwM2M-Objects/ Device/OMA-SUP-XML_LWM2M_Device-V1_0_Z.xml}
 ```
-* Inserts the latest revision of **LwM2M Device v1.0.Z** object inside of the `HTML` document. The Object file is stored in the **LwM2M-Objec**t repository, in the **master** branch (which is omitted) and inside of a folder called **Device**.
+* Inserts the latest revision of **LwM2M Device v1.0.Z** object inside of the `HTML` document. The Object file is stored in the **LwM2M-Object** repository, in the **master** branch (which is omitted), and inside a folder called **Device**.
 
 ### :SUPP1
 This instruction inserts an `XML` file stored on a `branch` or `release tag` into a `HTML` document.
@@ -54,7 +54,7 @@ This instruction inserts an `XML` file stored on a `branch` or `release tag` int
 ```
 
 ### :SUPP1 Examples:
-In this example the file to insert is stored in a `branch`.
+In this example, the file to insert is stored in a `branch`.
 
 ```md
 {:supp1 objects-lwm2m/dev LWM2M_Access_Control.xml}
@@ -66,21 +66,21 @@ In this example the file to insert is stored in a `branch`.
 ```md
 {:supp1 objects-lwm2m/v1_1 LWM2M_Access_Control.xml}
 ```
-In this example the file to insert is stored in a `release tag` instead of a branch.
+In this example, the file to insert is stored in a `release tag` instead of a branch.
 
 * `Repository_Name`: **objects-lwm2m**
 * `Release_Name`:    **v1_1**
 * `File_Name`:       **LWM2M_Access_Control.xml**
 
 ### :SUPP3
-This instruction inserts any file type (.xml; .xsd; .html; etc), stored or not in a `folder` into a `HTML` document/
+This instruction inserts any file type (.xml; .xsd; .html; etc.), stored or not in a `folder` into an `HTML` document/
 
 ```md
 {:supp3 [Repository_Name]/[Branch_tag_Name] [Folder_Name] | [Without_Folder]/[File_Name.extension]}
 ```
 
 #### :SUPP3 with Folder Example
-In this example the object is in a repository branch inside of a `folder`.
+In this example, the object is in a repository branch inside a `folder`.
 
 ```md
 {:supp3 Test_LwM2M_v1_1/schema SUP/OMA-SUP-XML_LWM2M.xsd}
@@ -92,7 +92,7 @@ In this example the object is in a repository branch inside of a `folder`.
 * `File_Name`:       ***OMA-SUP-XML_LWM2M.xsd**
 
 #### :SUPP3 in the default branch with Folder Example
-In this example the object is in the `master` branch inside of a `folder`.
+In this example, the object is in the `master` branch inside a `folder`.
 
 ```md
 {:supp3 Test_LwM2M_v1_1/master SUP/OMA-SUP-XML_LWM2M.xsd}
@@ -104,7 +104,7 @@ or
 ```
 
 * `Repository_Name`: **Test_LwM2M_v1_1**
-* `Branch_Name`:     **master** (It is also possible to omitt the name of the default branch, in this case `master`)
+* `Branch_Name`:     **master** (It is also possible to omit the name of the default branch, in this case, `master`)
 * `Folder_Name`:     **SUP**
 * `File_Name`:       ***OMA-SUP-XML_LWM2M.xsd**
 
