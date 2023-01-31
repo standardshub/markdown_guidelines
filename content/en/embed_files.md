@@ -13,7 +13,7 @@ You can embed an external file, e.g., `.xml`, `.json`, etc., into a markdown doc
 * [:SUPP3](#:supp3)
 
 ### :SUPP
-This instruction inserts an `XML` file inside of an `HTML` document as a table:
+This constructor inserts data from a specified `XML` file inside an `HTML` document, presenting it as a table:
 ```md
 {:supp [Repository_Name]/[Branch_Name] [Folder_Name]/[File_Name.xml]}
 ```
@@ -27,10 +27,10 @@ In this example, the file to insert is in a branch different from `master`.
 
 * `Repository_Name`: **LwM2M-Objects**
 * `Branch_Name`:     **development**
-* `Foler_Name`:      **Device**
+* `Folder_Name`:      **Device**
 * `File_Name`:       **OMA-SUP-XML_LWM2M_Device-V1_0_Z.xml**
 
-* Inserts the latest revision of the **LwM2M Device v1.0.Z** object inside of the `HTML` document. The Object file is stored in the **LwM2M-Object** repository, in the **development** branch, and inside a folder called **Device**.
+Insert the selected document from the given repository and branch inside the `HTML` document. The Object file is stored in the **LwM2M-Object** repository, in the **development** branch, and inside a folder called **Device**.
 
 #### 'master' Branch Example
 In this example, the `XML` file is in the `master` branch, and the name `master` can be omitted.
@@ -44,7 +44,8 @@ In this example, the `XML` file is in the `master` branch, and the name `master`
 ```md
 {:supp LwM2M-Objects/ Device/OMA-SUP-XML_LWM2M_Device-V1_0_Z.xml}
 ```
-* Inserts the latest revision of **LwM2M Device v1.0.Z** object inside of the `HTML` document. The Object file is stored in the **LwM2M-Object** repository, in the **master** branch (which is omitted), and inside a folder called **Device**.
+Insert the selected document from the given repository and branch inside the `HTML` document.
+The Object file is stored in the **LwM2M-Object** repository, in the **master** branch (which is omitted), and inside a folder called **Device**.
 
 ### :SUPP1
 This instruction inserts an `XML` file stored on a `branch` or `release tag` into a `HTML` document.
@@ -73,7 +74,7 @@ In this example, the file to insert is stored in a `release tag` instead of a br
 * `File_Name`:       **LWM2M_Access_Control.xml**
 
 ### :SUPP3
-This instruction inserts any file type (.xml; .xsd; .html; etc.), stored or not in a `folder` into an `HTML` document/
+This instruction inserts any file type (.xml; .xsd; .html; etc.), from a selected repository and branch and optional `folder` into an `HTML` document.
 
 ```md
 {:supp3 [Repository_Name]/[Branch_tag_Name] [Folder_Name] | [Without_Folder]/[File_Name.extension]}
@@ -89,7 +90,7 @@ In this example, the object is in a repository branch inside a `folder`.
 * `Repository_Name`: **Test_LwM2M_v1_1**
 * `Branch_Name`:     **schema**
 * `Folder_Name`:     **SUP**
-* `File_Name`:       ***OMA-SUP-XML_LWM2M.xsd**
+* `File_Name`:       **OMA-SUP-XML_LWM2M.xsd**
 
 #### :SUPP3 in the default branch with Folder Example
 In this example, the object is in the `master` branch inside a `folder`.
@@ -106,7 +107,7 @@ or
 * `Repository_Name`: **Test_LwM2M_v1_1**
 * `Branch_Name`:     **master** (It is also possible to omit the name of the default branch, in this case, `master`)
 * `Folder_Name`:     **SUP**
-* `File_Name`:       ***OMA-SUP-XML_LWM2M.xsd**
+* `File_Name`:       **OMA-SUP-XML_LWM2M.xsd**
 
 #### :SUPP3 without Folder Example
 In this example the object is in the root of a repository branch (no folder):

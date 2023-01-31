@@ -28,7 +28,7 @@ Also, if it is important that the tables are incorporated in the Index of the do
 
 ## HTML Tables
 
-* It is recommended to build `tables` using HTML constructors only. This is because tables will be added automatically to the `Index` section, as long as the `table` is defined with with the `caption` property.
+* It is recommended to build `tables` using HTML constructors only. This is because tables will be added automatically to the `Index` section, as long as the `table` is defined with the `caption` property.
 
 ```html
 <table class="max-width-50">

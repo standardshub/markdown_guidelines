@@ -4,7 +4,7 @@ description: ''
 position: 150
 category: MD2HTML App
 ---
-This section describes how use `paragraphs` constructors in markdown documents and how those constructors are rendered in `PDF` and `HTML`.
+This section describes how to use `paragraphs` constructors in markdown documents and how those constructors are rendered in `PDF` and `HTML`.
 
 * Use the "Enter" key to separate two paragraphs.
 * Inside of a `HTML` table use the element `<p>` text, text `</p>`.
