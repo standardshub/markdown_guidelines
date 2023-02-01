@@ -442,6 +442,14 @@ This is how a `code-block` is written in markdown:
   </code-block>
 </code-group>
 ```
+### Code Sandbox
+This is how a `code-sandbox` is displayed:
+<code-sandbox src="https://codesandbox.io/embed/nuxt-content-docs-theme-playground-inwxb?hidenavigation=1&theme=dar"></code-sandbox>
+
+This is how a `code-sandbox` is written in markdown:
+```md
+<code-sandbox src="https://codesandbox.io/embed/nuxt-content-docs-theme-playground-inwxb?hidenavigation=1&theme=dar"></code-sandbox>
+```
 
 ### Videos
 
