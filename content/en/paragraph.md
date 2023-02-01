@@ -107,27 +107,25 @@ Syntax highlighting may be displayed differently after md is converted to HTML &
 ### Single Line Break	
 * This is how a line break is inserted in `HTML`.
 
+End a line with two or more spaces or `(<br>)`, and then type return to create a line break or new line.
+
 ```html
 <br>
 ```
 
 **DO's**  
-* Paragraph one with two spaces after.  
-  Paragraph two.
+* Add two spaces after first paragraph to separate from the next.
 
-* Paragraph one with the HTML tag after.`<br>`  
-  Paragraph two. 
+* Add HTML tag `<br>` after first paragraph to separate from the next.
 
 **DON'Ts**  
-* Paragraph one with a backslash after. `\`  
-  Paragraph two.
+* Type a backslash `\` between paragraphs. 
 
-* Paragraph one with nothing after.  
-  Paragraph two.
+* Nothing between adjacent paragraphs. 
 
 Example:
 ```md
-Paragraph one.
+Paragraph one. <br>
 
 Paragraph two. 
 Another line immediately afterwards will be displayed starting on the same line as paragraph two.
