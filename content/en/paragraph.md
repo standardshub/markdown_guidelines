@@ -4,12 +4,10 @@ description: ''
 position: 150
 category: MD2HTML App
 ---
-## Paragraph
+This section describes how to use `paragraphs` constructors in markdown documents and how those constructors are rendered in `PDF` and `HTML`.
 
-**DO's**
 * Use the "Enter" key to separate two paragraphs.
-* Inside of a HTML table use the element `<p>` text, text `</p>`.
-**DON'Ts**
+* Inside of a `HTML` table use the element `<p>` text, text `</p>`.
 * Do not use `<p>` tag in normal body text unless the paragraph is inside of a table (see above).
 
 ## Blockquote
@@ -25,19 +23,22 @@ This is how a `blockquote` is written in markdown:
 ```
 ## Code
 This is how `code` is displayed:
+
 `code`
 
 This is how `code` is written in markdown:
+
 ```md
 `code`
 ```
 
 ## Preformatted Text
 
-* Use (```) to indicate the beginning and end of preformatted text block.
-* Use (```) with caution. Line breaks are not automatically inserted so in PDF text may not be fully displayed.
+* Use (```) to indicate the beginning and end of `preformatted` text block.
+* Use (```) with caution. Line breaks are not automatically inserted so in `PDF` text may not be fully displayed.
+* Use `preformated` text, when you want to present the information without alignments, see below.
 
-This is how `preformatted text` is displayed:
+This is how `preformatted` text is displayed:
 
 ```
 Text in this position
@@ -59,12 +60,11 @@ Text in this position
 
 ## Code With Syntax Highlighting
 
+* To add `syntax with highlighting` text, specify a code type `keyword` next to the backticks <code>```xml</code> before the fenced code block.
 
-To add syntax highlighting, specify a code type next to the backticks <code>(```)</code> before the fenced code block.
+* This is how, e.g., `xml` code block is displayed:
 
-Displayed e.g. XML code block:
-
-```XML
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <LWM2M xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
        xsi:noNamespaceSchemaLocation=
@@ -79,7 +79,7 @@ Displayed e.g. XML code block:
 This is how XML code block is written in markdown:
 
 ````
-```XML
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <LWM2M xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" 
        xsi:noNamespaceSchemaLocation=
@@ -105,6 +105,7 @@ Syntax highlighting may be displayed differently after md is converted to HTML &
 ## Line Breaks
 
 ### Single Line Break	
+* This is how a line break is inserted in `HTML`.
 
 ```html
 <br>
@@ -131,7 +132,7 @@ Paragraph one.
 Paragraph two. 
 Another line immediately afterwards will be displayed starting on the same line as paragraph two.
 ```
-This is how it is displayed:
+* This is how it is displayed:
 
 Paragraph one.
 
@@ -151,5 +152,6 @@ For example:
 ```md
 Resource&nbsp;Instance
 ```
+* This is how it is rendered:
 
 Resource&nbsp;Instance

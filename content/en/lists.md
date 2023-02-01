@@ -5,14 +5,14 @@ position: 160
 category: MD2HTML App
 ---
 
-## Lists in Markdown
+## Markdown Lists
 ### Ordered List
-This is how an `Ordered list` is displayed:
+* This is how an `ordered list` is displayed:
 1. First item
 2. Second item
 3. Third item
 
-This is how an `Ordered list` is written in markdown:
+* This is how an `ordered list` is written in markdown:
 ```md
 1. First item
 2. Second item
@@ -20,13 +20,13 @@ This is how an `Ordered list` is written in markdown:
 ```
 
 ### Unordered List
-This is how an `Unordered list` is displayed:
+* This is how an `unordered list` is displayed:
 
 - First item
 - Second item
 - Third item
 
-This is how an `Unordered list` is written in markdown:
+* This is how an `unordered list` is written in markdown:
 ```md
 - First item
 - Second item
@@ -35,7 +35,7 @@ This is how an `Unordered list` is written in markdown:
 
 ### Nested List
 
-Next nested level achieved by indenting two spaces to the right e.g.
+* You can `nest` a list by indenting two spaces to the right e.g.
 
 1. First item
 2. Second item
@@ -45,7 +45,7 @@ Next nested level achieved by indenting two spaces to the right e.g.
      2. Nested item 2
 3. Third item
 
-This is how an `Nested list` is written in markdown:
+* This is how a `nested list` is written in markdown:
 ```md
 1. First item
 2. Second item
@@ -55,17 +55,17 @@ This is how an `Nested list` is written in markdown:
      2. Nested item 2
 3. Third item
 ```
-## Lists in HTML
+## HTML Lists
 
 ### Ordered List
+* These are the values to rendering `ordered lists`: 
+  * type="1" - numbers (default)
+  * type="A" - uppercase letters
+  * type="a" - lowercase letters
+  * type="I" - uppercase roman numbers
+  * type="i" - lowercase roman numbers
 
-* type="1" - numbers (default)
-* type="A" - uppercase letters
-* type="a" - lowercase letters
-* type="I" - uppercase roman numbers
-* type="i" - lowercase roman numbers
-
-This is `Ordered list` written in HTML:
+* This is an `ordered list` written in HTML:
 ```html
 <ol type = "1">
     <li>Requirements Document</li>
@@ -73,7 +73,7 @@ This is `Ordered list` written in HTML:
     <li>Transport TS</li>
 </ol>
 ```
-Displayed `Ordered list`:
+* This is how it is displayed:
 
 <ol type = "1">
   <li>Requirements Document</li>
@@ -83,7 +83,7 @@ Displayed `Ordered list`:
 
 ### Unordered List
 
-This is `Unordered list` written in HTML:
+* This is `unordered list` written in HTML:
 ```html
 <ul>
   <li>Requirements Document</li>
@@ -91,7 +91,7 @@ This is `Unordered list` written in HTML:
   <li>Transport TS</li>
 </ul>
 ```
-Displayed `Unordered list`:
+* This is how it is displayed:
 
 <ul>
   <li>Requirements Document</li>
@@ -99,13 +99,9 @@ Displayed `Unordered list`:
   <li>Transport TS</li>
 </ul>
 
-**DON'Ts**
+### Nested Lists
 
-* DON'T use markdown tables
-
-### Nested List
-
-This is an example of `Nested list` (list inside of list) written in HTML:
+* This is an example of `nested list` (list inside of list) written in HTML:
 
 ```html
 <ul>
@@ -124,7 +120,7 @@ This is an example of `Nested list` (list inside of list) written in HTML:
   <li>Transport TS</li>
 </ul>
 ```
-Displayed `Nested list`:
+* This is how it is displayed:
 
 <ul>
   <li>Requirements Document

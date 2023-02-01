@@ -4,7 +4,6 @@ description: ''
 position: 30
 category: Introduction
 ---
-## Introduction
 The purpose of this document is to provide hands-on information on creating and deploying the documentation type website using the [nuxt-content-docs](https://www.npmjs.com/package/@nuxt/content-theme-docs) template package and [GitHub pages](https://pages.github.com/) capabilities.
 
 The goal is to provide more detailed information in order to deliver the promise of the `nuxt-content-docs`:
@@ -15,23 +14,34 @@ The goal is to provide more detailed information in order to deliver the promise
 
 To create a project you can utilise `yarn` or `npm` package manager.
 
-```bash
+<code-group>
+  <code-block label="Yarn" active>
+
+  ```bash
 # Yarn
 yarn create nuxt-content-docs <project-name>
+  ```
+  </code-block>
+  <code-block label="NPM">
 
+  ```bash
 # NPX
 npx create-nuxt-content-docs <project-name>
-```
+  ```
+  </code-block>
+</code-group>
+
+
 > Note: `<project-name>` is the name of the repository already created in GitHub.
 
 ### Example 
 
-For creating `my-project-docs` use the command:
+To create `my-project-docs` use the command:
 
 ```bash
 npx create-nuxt-content-docs my-project-docs
 ```
-Once the initial project template is downloaded a set of questions to configure the project will be presented. The default answers can be taken if you do not have prepared the specific ones in advance.
+Once the initial project template is downloaded a set of questions to configure the project are presented. The default answers can be taken if you do not have prepared the specific ones in advance.
 The most important is the selection of the package manager as you must have it installed on your system.
 If you have already installed `node` then `npm` is already available. [Yarn](https://yarnpkg.com/) needs to be installed separately.
 

@@ -5,16 +5,16 @@ position: 170
 category: MD2HTML App
 ---
 
-## Table in Markdown
+## Markdown Tables
 
-This is how a `table` is displayed:
+* This is how a `table` is displayed:
 
 | Syntax      | Description |
 | ----------- | ----------- |
 | Header      |       Title |
 | Paragraph   | Text        |
 
-This is how a `table` is written in markdown:
+* This is how a `table` is written in markdown:
 
 ```md
 | Syntax      | Description |
@@ -22,12 +22,13 @@ This is how a `table` is written in markdown:
 | Header      |       Title |
 | Paragraph   |       Text  |
 ```
-or
-Insert basic HTML table
 
-## Tables in HTML
+<alert type="warning">If the table is large with `cells` merged among rows and columns, then it is advisable to create tables using `HTML`.
+Also, if it is important that the tables are incorporated in the Index of the document, then you must construct your tables using `HTML`.</alert>
 
-It is recommended to build `tables` using HTML constructors only. This is because tables will be added automatically to the `Index` section, as long as the `table` is defined with with the `caption` property.
+## HTML Tables
+
+* It is recommended to build `tables` using HTML constructors only. This is because tables will be added automatically to the `Index` section, as long as the `table` is defined with the `caption` property.
 
 ```html
 <table class="max-width-50">
