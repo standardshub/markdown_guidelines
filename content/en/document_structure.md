@@ -20,10 +20,10 @@ In this version of the tool, the legal disclaimer text is inserted automatically
 In this version of the tool, the license document is added to the list of files. See [Setup Index File](/md2html-setup) for further details. 
 
 ## Header
-The MD2HTML tool automatically adds a header to generated PDFs
+The MD2HTML tool automatically adds a header to generated PDFs.
 
 ## Footer
-The MD2HTML tool automatically adds a footer to generated PDFs
+The MD2HTML tool automatically adds a footer to generated PDFs.
 
 ## Indexes
 
@@ -34,9 +34,9 @@ The MD2HTML tool automatically adds a footer to generated PDFs
 This content doesn't exist in the markdown documents.
 It is constructed automatically by the conversion tool, and only appears in the HTML & PDF generated documents.
 
-* Choose unique titles for the sections, subsections, tables and figures
+* Choose unique titles for the sections, subsections, tables and figures.
 * Avoid using special characters in the titles. It makes difficult to establish links inside of the document to a particular section.
-* Try to create titles for section, figures and tables that are short and without special characters
+* Try to create titles for section, figures and tables that are short and without special characters.
 
 
 ## Horizontal Rule

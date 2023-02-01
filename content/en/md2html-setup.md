@@ -47,11 +47,11 @@ Example of a `index.md` file, MD2HTML v1.x:
 * `documentName`
     * File name without extension format. See example above
 * `files`
-    * This property, list all the names of the markdown documents to display in the order in which should appear on the final document
+    * This property represents a list of documents in the markdown that needs to be combined to create a final document.
 
 ## MD2HTML v2.x
 
-In v2.0 the file name extension was changed from `.md` to `.yaml`. The `index.yaml` file MUST added to the root folder for each document.
+In v2.0 the file name extension was changed from `.md` to `.yaml`. The `index.yaml` file MUST be added to the root folder for each document.
 
 Example of an `index.yaml` file for MD2HTML v2.x:
         
@@ -84,8 +84,8 @@ Example of an `index.yaml` file for MD2HTML v2.x:
 	---
 ### New Properties:
 * `organizationName`:  represents the name of the organization.
-* `copyrightDate`:         the copyright date now is defined by this property
+* `copyrightDate`:         the copyright date is defined by this property.
 * `logo`:                          this allows each document to have its own logo
 * `watermark`:               this property inserts a watermark inside of the PDF. Possible values are: "DRAFT",  "CANDIDATE", "HISTORIC", "DEPRECATED", "PRE-APPROVED", "APPROVED".
 
-<alert>In MD2HTML v2.0, the `License.md` contains the license defined for that particular document. It can be inserted at front of the list of files or at the botoom.</alert>
+<alert>In MD2HTML v2.0, the `License.md` contains the license defined for that particular document. It can be inserted at the top of the list of files or at the botoom.</alert>

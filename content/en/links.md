@@ -4,7 +4,7 @@ description: ''
 position: 180
 category: MD2HTML App
 ---
-The usage of `links` allows us to connect text inside and cross sections, as well as to external resources.
+The usage of `links` allows us to connect text inside and across sections, as well as to external resources.
 
 ## Basics Links
 * This is how a `link` is displayed:
@@ -144,7 +144,7 @@ For example:
 
 **DOs**
 
-* For links to figures from within an `HTML` table using the `HTML` anchor tag:
+* For links to figures from within an `HTML` table use the `HTML` anchor tag:
 
 For example:
 
@@ -252,7 +252,7 @@ For example:
 * The title already contains the word  `Table`. So that you know, you don't need to duplicate it outside the anchor.
 
 ## To External Links
-* For additional link styles from within `HTML` tables, use the `HTML` anchor tag:
+* For additional link types from within `HTML` tables, use the `HTML` anchor tag:
 
 ```html
 <a href="http://www.openmobilealliance.org/">URL</a>
