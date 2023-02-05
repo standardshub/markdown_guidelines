@@ -38,7 +38,38 @@ It is constructed automatically by the conversion tool, and only appears in the 
 * Avoid using special characters in the titles. It makes difficult to establish links inside of the document to a particular section.
 * Try to create titles for section, figures and tables that are short and without special characters.
 
+## Definitions & Abbreviations
+The features described in this section are only available in MD2HTML v2.1.x. Prior versions are not able to present the information as described here.
 
+
+* First step is to create a section on the markdown document to store `definitions` and `abbreviations`. We recommend to call this section `Terminology and Conventions`. The section should contain two subsections, `Definitions`, and `Abbreviations`.
+
+### Definitions
+* This is how a `definition` is written in `html`
+
+```html
+ <dl>
+        <dt></dt>
+        <dd></dd>
+ </dl>
+```
+Where:
+    `<dl>` = definition list;
+    `<dt>` = definition title;
+    `<dd>` = definition description.
+
+### Abbreviations
+
+```html
+ <dl>
+        <dt></dt>
+        <dd></dd>
+ </dl>
+```
+Where:
+    `<dl>` = definition list;
+    `<dt>` = definition title;
+    `<dd>` = definition description.
 ## Horizontal Rule
 
 
