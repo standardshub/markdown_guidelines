@@ -9,3 +9,9 @@ category: MD2HTML App
 
 The markdown constructors listed here are regularly used on the construction of Technical Documents.
 
+### Basic Markdown Constructors
+
+<figure>
+<embed style="width: 80%" src="images/md-basic-constr.drawio.svg" alt="MD Basic Constructors">
+    <figcaption>MD Basic Constructors</figcaption>
+</figure>
