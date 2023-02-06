@@ -49,7 +49,7 @@ This problem can be mitigated by increasing the browser zoom setting. </alert>
 
 
 
-### DO's
+**DO's**
 
 * Use the `HTML` constructor as listed above.
 * Use the same title as a value for `<figcaption>` and `alt` elements.
@@ -57,7 +57,7 @@ This problem can be mitigated by increasing the browser zoom setting. </alert>
 * Ensure contiguous text is in a single text box, not multiple text boxes. 
     * If multiple text boxes are used, the figures may render incorrectly in the PDF version.
 
-### DON'Ts
+**DON'Ts**
 
 * DON'T use markdown constructors to insert a `figure`.
 * DON'T use parameters to center or to define the `width` and `height` of the `figure`. The `MD2HTML` tool will apply a predefined `CSS` that contains all the necessary styles to ensure the best possible `PDF` quality.
