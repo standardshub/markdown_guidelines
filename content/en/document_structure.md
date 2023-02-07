@@ -46,7 +46,7 @@ The features described in this section are only available in MD2HTML v2.1.x. Pre
 * This new section should contain two subsections, `Definitions` and `Abbreviations`.
 
 ### Definitions
-* This is how a `definition` is defined on the markdown document:
+* This is how a `definition` section is defined on the markdown document:
 
 ```html
  <dl>
@@ -61,10 +61,10 @@ Where:
     `<dt>` = definition title;
     `<dd>` = definition description.
 
-* This is how `definitions` are displayed in `html`:
+* This is how a `definition` section is displayed on `HTML` or `PDF`:
 ![image](https://user-images.githubusercontent.com/3258579/217130743-c9e4d070-f15d-4d5c-ab2f-f1452d94847b.png)
 
-* This is how a `definition` is used in a section text.
+* This is how a singular or plural `definition` terms are used in a section text.
 
 ```html
 bla, bla, bla, 
@@ -72,14 +72,16 @@ bla, bla, bla,
 bla, bla, bla. 
 Network security is monitored by <a title= "firewall">firewalls</a> which control ...
 ```
+* To use a `definition` in plural, insert the `title` property inside of the anchor `a` element.
 
-* This is how a `definition` is displayed in HTML and PDF documents.
+
+* This is how a `definition` term is displayed on `HTML` and `PDF` documents.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131695-5f364607-2a04-47bd-a538-d223b2be895e.png)
 
 
 ### Abbreviations
-This is how an `abbreviation` is written on the markdown documents:
+This is how an `abbreviation` section is written on markdown documents:
 
 ```html
  <dl>
@@ -96,19 +98,20 @@ Where:
     `<dl>` = definition list;
     `<dt>` = definition title;
     `<dd>` = definition description.
-* This is how an `abbreviation` section is displayed in `HTML` or `PDF`.
+* This is how an `abbreviation` section is displayed on `HTML` or `PDF`.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131385-39e56ee7-6a22-411f-a863-436eacc73282.png)
 
-* This is how an `abbreviation` is used in a section text.
+* This is how a singular and plural `abbreviation` terms are used in a section text.
 
 ```html
 bla, bla, bla, 
 bla, bla, <abbr>SH</abbr> is a Service Management Association that provides Standards Organizations with an end-to-end service, from organization formation to publication of the organization outputs.
 such as <abbr title= "TS">TS's</abbr> and <abbr title= "AD">AD's</abbr>
 ```
+* To use an `abbreviation` in plural, insert the `title` property inside of the `abbr` element.
 
-* This is how an `abbreviation` is displayed in `HTML` and `PDF` document.
+* This is how an `abbreviation` term is displayed on `HTML` and `PDF` document.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131339-f6f4be08-4319-41af-bbc9-f6da5970a248.png)
 
