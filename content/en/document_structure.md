@@ -17,7 +17,7 @@ In this version, the legal disclaimer text is inserted automatically by the md2h
 <alert> OMA-License.txt file is added to the repository as a reference. The MD2HTML tool uses its License file.</alert>
 
 ### MD2HTML v2.x
-In this version of the tool==, the license document is added to the list of files. See [Setup Index File](/md2html-setup) for further details. 
+In this version of the tool, the license document is added to the list of files. See [Setup Index File](/md2html-setup) for further details. 
 
 ## Header
 The MD2HTML tool automatically adds a header to generated PDFs.
@@ -76,8 +76,8 @@ bla, bla, bla.
 Network security is monitored by <a title= "firewall">firewalls</a> which control ...
 ```
 * To use a `definition` in singular, insert the `definition` term inside of the anchor `<a>`, e.g., `<a>firewall</a>`.
-* To use a `definition` term in plural, insert the `title` property inside of the anchor element, and the plurar inside of the anchor `<a>`, e.g. `<a title= "firewall">firewalls</a>`.
-* When position a `mouse pointer` over the `definition` word, a `tooltip` is displayed with the `definition` in singular and a click on the word will render the page on the `definition` term.
+* To use a `definition` term in plural, insert the `title` property inside of the anchor element, and the plural inside of the anchor `<a>`, e.g. `<a title= "firewall">firewalls</a>`.
+* When positioning a `mouse pointer` over the `definition` word, a `tooltip` is displayed with the `definition` in singular and a click on the word will render the page on the `definition` term.
 
 
 This is how a `definition` term is displayed on `HTML` and `PDF` documents.
@@ -117,13 +117,13 @@ such as <abbr title= "TS">TS's</abbr> and <abbr title= "AD">AD's</abbr>
 ```
 * To use an `abbreviation` term in singular, insert the `abbreviation_word` inside of the element, e.g. `<abbr>TS</abbr>`.
 * To use an `abbreviation` term in plural, insert the `title` property with a singular value and the plural value inside of the `<anchor>`, e.g. `<abbr title= "TS">TS's</abbr>`.
-* When position a `mouse pointer` over the `abbreviation` word, a `tooltip` is displayed with the `abbreviation` expanded.
+* When positioning a `mouse pointer` over the `abbreviation` word, a `tooltip` is displayed with the `abbreviation` expanded.
 
 * This is how an `abbreviation` term is displayed on `HTML` and `PDF` document.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131339-f6f4be08-4319-41af-bbc9-f6da5970a248.png)
 
-<alert>MD2HTML uses the same constructors `dl`, `dt`, `dd` to write a <i>definition</i> or an <i>abbreviation</i></alert>
+<alert>MD2HTML uses the same constructors `dl`, `dt`, `dd` to write a <i>definition</i> or an <i>abbreviation.</i></alert>
 
 ## Horizontal Rule
 
