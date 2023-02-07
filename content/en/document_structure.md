@@ -42,34 +42,61 @@ It is constructed automatically by the conversion tool, and only appears in the 
 The features described in this section are only available in MD2HTML v2.1.x. Prior versions are not able to present the information as described here.
 
 
-* First step is to create a section on the markdown document to store `definitions` and `abbreviations`. We recommend to call this section `Terminology and Conventions`. The section should contain two subsections, `Definitions`, and `Abbreviations`.
+* First step is to create a section on the markdown document to store `definitions` and `abbreviations`. We recommend to call this section `Terminology and Conventions`. 
+* This new section should contain two subsections, `Definitions`, and `Abbreviations`.
 
 ### Definitions
-* This is how a `definition` is written in `html`
+* This is how a `definition` is defined on the markdown document:
 
 ```html
  <dl>
-        <dt></dt>
-        <dd></dd>
+        <dt>Git</dt>
+        <dd>Git is a distributed version control system that tracks changes in any set of text files.</dd>
  </dl>
 ```
 Where:
     `<dl>` = definition list;
     `<dt>` = definition title;
     `<dd>` = definition description.
+
+* This is how a `definition` is used in a section text.
+
+```html
+bla, bla, bla, 
+<a>Git</a> is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+bla, bla, bla,
+```
+
+* This is how it is display in HTML and PDF document.
+
+
 
 ### Abbreviations
+This is how an `abbreviation` is written on the markdown documents:
 
 ```html
  <dl>
-        <dt></dt>
-        <dd></dd>
+        <dt>SH</dt>
+        <dd>Standards Hub</dd>
  </dl>
 ```
 Where:
     `<dl>` = definition list;
     `<dt>` = definition title;
     `<dd>` = definition description.
+
+* This is how an `abbreviation` is used in a section text.
+
+```html
+bla, bla, bla, 
+<abbr>SH</abbr> is a Service Management Association that provides Standards Organizations with an end-to-end service, from organization formation to publication of the organization outputs.
+bla, bla, bla,
+```
+
+* This is how it is display in HTML and PDF document.
+
+<alert>MD2HTML uses the same constructors `dl`, `dt`, `dd` to write a <i>definition</i> or an <i>abbreviation</i></alert>
+
 ## Horizontal Rule
 
 
