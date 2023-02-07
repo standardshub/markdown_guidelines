@@ -39,14 +39,17 @@ It is constructed automatically by the conversion tool, and only appears in the 
 * Try to create titles for sections, figures, and tables that are short and without special characters.
 
 ## Definitions & Abbreviations
-The features described in this section are only available in MD2HTML v2.1.x. Previous versions cannot render `definitions` and `descriptions` as presented here.
+The features described in this section are only available in MD2HTML v2.1.x. 
+Previous versions cannot render `definitions` and `descriptions` features as described here.
 
 
-* First step is to create a section on the markdown document to store `definitions` and `abbreviations`. We recommend calling this section `Terminology and Conventions`. 
-* This new section should contain two subsections, `Definitions` and `Abbreviations`.
+* The first step is to create a section on the markdown document to store `definitions` and `abbreviations`. We recommend calling this section `Terminology and Conventions`. 
+* This new section should contain two subsections:
+   * `Definitions`, and 
+   * `Abbreviations`.
 
 ### Definitions
-* This is how a `definition` section is defined on the markdown document:
+This is how a `definition` section is defined on the markdown document:
 
 ```html
  <dl>
@@ -61,10 +64,10 @@ Where:
     `<dt>` = definition title;
     `<dd>` = definition description.
 
-* This is how a `definition` section is displayed on `HTML` or `PDF`:
+This is how a `definition` section is displayed on `HTML` or `PDF`:
 ![image](https://user-images.githubusercontent.com/3258579/217130743-c9e4d070-f15d-4d5c-ab2f-f1452d94847b.png)
 
-* This is how a singular or plural `definition` terms are used in a section text.
+This is how a singular or plural `definition` terms are used in a section text.
 
 ```html
 bla, bla, bla, 
@@ -72,10 +75,12 @@ bla, bla, bla,
 bla, bla, bla. 
 Network security is monitored by <a title= "firewall">firewalls</a> which control ...
 ```
-* To use a `definition` in plural, insert the `title` property inside of the anchor `a` element.
+* To use a `definition` in singular, insert the `definition` term inside of the anchor `<a>`, e.g., `<a>firewall</a>`.
+* To use a `definition` term in plural, insert the `title` property inside of the anchor element, and the plurar inside of the anchor `<a>`, e.g. `<a title= "firewall">firewalls</a>`.
+* When position a `mouse pointer` over the `definition` word, a `tooltip` is displayed with the `definition` in singular and a click on the word will render the page on the `definition` term.
 
 
-* This is how a `definition` term is displayed on `HTML` and `PDF` documents.
+This is how a `definition` term is displayed on `HTML` and `PDF` documents.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131695-5f364607-2a04-47bd-a538-d223b2be895e.png)
 
@@ -98,18 +103,21 @@ Where:
     `<dl>` = definition list;
     `<dt>` = definition title;
     `<dd>` = definition description.
-* This is how an `abbreviation` section is displayed on `HTML` or `PDF`.
+
+This is how an `abbreviation` section is displayed on `HTML` or `PDF`.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131385-39e56ee7-6a22-411f-a863-436eacc73282.png)
 
-* This is how a singular and plural `abbreviation` terms are used in a section text.
+This is how a singular and plural `abbreviation` terms are used in a section text.
 
 ```html
 bla, bla, bla, 
 bla, bla, <abbr>SH</abbr> is a Service Management Association that provides Standards Organizations with an end-to-end service, from organization formation to publication of the organization outputs.
 such as <abbr title= "TS">TS's</abbr> and <abbr title= "AD">AD's</abbr>
 ```
-* To use an `abbreviation` in plural, insert the `title` property inside of the `abbr` element.
+* To use an `abbreviation` term in singular, insert the `abbreviation_word` inside of the element, e.g. `<abbr>TS</abbr>`.
+* To use an `abbreviation` term in plural, insert the `title` property with a singular value and the plural value inside of the `<anchor>`, e.g. `<abbr title= "TS">TS's</abbr>`.
+* When position a `mouse pointer` over the `abbreviation` word, a `tooltip` is displayed with the `abbreviation` expanded.
 
 * This is how an `abbreviation` term is displayed on `HTML` and `PDF` document.
 
