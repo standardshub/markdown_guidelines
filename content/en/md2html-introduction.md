@@ -27,3 +27,8 @@ This diagram contains `HTML` constructors. These constructors are used inside of
 <embed style="width: 80%" src="images/extended-md-constr.drawio.svg" alt="HTLM Constructors">
     <figcaption>HTML Constructors</figcaption>
 </figure>
+
+### Advance Constructors
+This diagram contains special constructors or instructions inserted inside of the markdown documents. These instructions have are interpreted by the MD2HTML App to create `PDF` and `HTML` documents.
+
+Figure TBD
