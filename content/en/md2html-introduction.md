@@ -7,7 +7,7 @@ category: MD2HTML App
 
 ## Introduction
 
-The `markdown` and `HTML` constructors listed here are regularly used on the construction of Technical Documents. The content of these documents is assembly by the MD2HTML App based on the instructions in the files: [`index.md`]() for v1.x or [`index.yaml`]() for v2.x.
+The `markdown` and `HTML` constructors listed here are regularly used on the construction of Technical Documents. The content of these documents is assembly by the MD2HTML App based on the instructions in the files: [`index.md`](/md2html-setup#md2html-v1x) for v1.x or [`index.yaml`](/md2html-setup#md2html-v2x) for v2.x.
 
 ### Markdown Constructors
 This diagram contains `markdown` constructors.
@@ -15,8 +15,8 @@ This diagram contains `markdown` constructors.
 * Click on any of the links to see how to use the constructor.
 
 <figure>
-<embed style="width: 80%" src="images/md-basic-constr.drawio.svg" alt="MD Basic Constructors">
-    <figcaption>MD Basic Constructors</figcaption>
+<embed style="width: 80%" src="images/md-basic-constr.drawio.svg" alt="Markdown Constructors">
+    <figcaption>Markdown Constructors</figcaption>
 </figure>
 
 ### HTML Constructors
