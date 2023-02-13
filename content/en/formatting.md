@@ -30,3 +30,15 @@ This section explains how to use constructors to manage document formats.
 * Only use at the start of a line.
 * Use where markdown is expected.
 * Ensure `{:page-break}` is followed by a blank line.
+
+## Horizontal Rule
+
+
+This is how a `horizontal rule` is displayed:
+
+---
+This is how a `horizontal rule` is written in markdown:
+
+```md
+---
+```
