@@ -15,7 +15,7 @@ This diagram contains `markdown` constructors.
 * Click on any of the links to see how to use the constructor.
 
 <figure>
-<embed style="width: 80%" src="images/md-basic-constr.drawio.svg" alt="Markdown Constructors">
+<embed style="width: 80%" src="images/md-basic-constr.svg" alt="Markdown Constructors">
     <figcaption>Markdown Constructors</figcaption>
 </figure>
 
@@ -24,11 +24,14 @@ This diagram contains `HTML` constructors. These constructors are used inside of
 * Click on any of the links to see how to use the constructor.
 
 <figure>
-<embed style="width: 80%" src="images/extended-md-constr.drawio.svg" alt="HTLM Constructors">
+<embed style="width: 80%" src="images/md2html-extended-constr1.drawio.svg" alt="HTLM Constructors">
     <figcaption>HTML Constructors</figcaption>
 </figure>
 
 ### Advance Constructors
 This diagram contains special constructors or instructions inserted inside of the markdown documents. These instructions have are interpreted by the MD2HTML App to create `PDF` and `HTML` documents.
 
-Figure TBD
+<figure>
+<embed style="width: 100%" src="images/md2html-example.svg" alt="Example">
+    <figcaption>Example</figcaption>
+</figure>
