@@ -32,6 +32,6 @@ This diagram contains `HTML` constructors. These constructors are used inside of
 This diagram contains special constructors or instructions inserted inside of the markdown documents. These instructions have are interpreted by the MD2HTML App to create `PDF` and `HTML` documents.
 
 <figure>
-<embed style="width: 80%" src="images/md2html-example.svg" alt="Example">
+<embed style="width: 100%" src="images/md2html-example.svg" alt="Example">
     <figcaption>Example</figcaption>
 </figure>
