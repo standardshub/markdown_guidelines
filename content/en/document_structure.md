@@ -38,9 +38,18 @@ It is constructed automatically by the conversion tool, and only appears in the 
 * Avoid using special characters in the titles. It makes it difficult to establish links inside of the document to a particular section.
 * Try to create titles for sections, figures, and tables that are short and without special characters.
 
-## Definitions & Abbreviations
+
+## Scope
+
+## References
+
+
+
+## Terminology and Conventions
+### Conventions
 The features described in this section are only available in MD2HTML v2.1.x. 
 Previous versions cannot render `definitions` and `descriptions` features as described here.
+
 
 
 * The first step is to create a section on the markdown document to store `definitions` and `abbreviations`. We recommend calling this section `Terminology and Conventions`. 
@@ -125,14 +134,5 @@ such as <abbr title= "TS">TS's</abbr> and <abbr title= "AD">AD's</abbr>
 
 <alert>MD2HTML uses the same constructors `dl`, `dt`, `dd` to write a <i>definition</i> or an <i>abbreviation.</i></alert>
 
-## Horizontal Rule
+## Introduction
 
-
-This is how a `horizontal rule` is displayed:
-
----
-This is how a `horizontal rule` is written in markdown:
-
-```md
----
-```
