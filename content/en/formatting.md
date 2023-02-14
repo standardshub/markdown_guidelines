@@ -9,16 +9,6 @@ This section explains how to use constructors to manage document formats.
 * Formatting instructions should be done using CSS and NOT `MD` or `HTML.`
 * No style should be introduced on any of the HTML constructors.
 
-## Ignore Markdown Formatting
-
-* To ignore markdown formatting, insert a  backslash `\` character before the markdown character e.g.
-
-```md
-\[RFC6655\]
-```
-
-\[RFC6655\]
-
 ## Page Break
 
 * To introduce a page break insert:
@@ -42,3 +32,12 @@ This is how a `horizontal rule` is written in markdown:
 ```md
 ---
 ```
+## Ignore Markdown Formatting
+
+* To ignore markdown formatting, insert a  backslash `\` character before the markdown character e.g.
+
+```md
+\[RFC6655\]
+```
+
+\[RFC6655\]
