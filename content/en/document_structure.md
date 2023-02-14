@@ -43,7 +43,9 @@ It is constructed automatically by the conversion tool, and only appears in the 
 
 ## References
 
+### Normative References
 
+### Informative References
 
 ## Terminology and Conventions
 ### Conventions
