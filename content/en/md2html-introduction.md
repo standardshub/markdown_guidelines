@@ -14,6 +14,8 @@ This diagram contains `markdown` constructors.
 * These constructors cannot be used inside of a `HTML` structure. It won't render correctly.
 * Click on any of the links to see how to use the constructor.
 
+<mark >Highlighted text</mark> 
+
 <figure>
 <embed style="width: 80%" src="images/md-basic-constr.svg" alt="Markdown Constructors">
     <figcaption>Markdown Constructors</figcaption>
