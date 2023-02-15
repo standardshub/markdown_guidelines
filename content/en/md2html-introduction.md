@@ -24,7 +24,7 @@ This diagram contains `HTML` constructors. These constructors are used inside of
 * Click on any of the links to see how to use the constructor.
 
 <figure>
-<embed style="width: 80%" src="images/md2html-extended-constr1.drawio.svg" alt="HTLM Constructors">
+<embed style="width: 80%" src="images/2extended-constr-graph.drawio.svg" alt="HTLM Constructors">
     <figcaption>HTML Constructors</figcaption>
 </figure>
 
