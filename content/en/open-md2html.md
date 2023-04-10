@@ -8,4 +8,4 @@ category: Introduction
 
 The page for this free service is under development. 
 
-<alert>We are aiming to build our free service to convert markdown into PDF by the end of March 2023.</alert>
+<alert>We are aiming to build our free service to convert markdown into PDF and HTML by the end of April 2023.</alert>
