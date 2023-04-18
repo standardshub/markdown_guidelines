@@ -31,11 +31,11 @@ Also, if it is important that the tables are incorporated in the Index of the do
 * It is recommended to build `tables` using HTML constructors only. This is because tables will be added automatically to the `Index` section, as long as the `table` is defined with the `caption` property.
 
 ```html
-<table class="max-width-50">
+<table>
   <caption>Table Title</caption>
   <thead>
-    <tr class="height-20">
-        <th class="width-10">Header 1</th>
+    <tr>
+        <th>Header 1</th>
         <th>Header 2</th><th>Header3</th>
     </tr>
 </thead>
