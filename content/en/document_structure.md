@@ -63,7 +63,8 @@ Previous versions cannot render `definitions` and `descriptions` features as des
 This is how a `definition` section is defined on the markdown document:
 
 ```html
- <dl>
+
+ <dl data-caption="Definitions" data-term-column-title="Term" data-description-column-title="Description">
         <dt>Git</dt>
         <dd>Git is a distributed version control system that tracks changes in any set of text files.</dd>
         <dt>Firewall</dt>
@@ -76,7 +77,11 @@ Where:
     `<dd>` = definition description.
 
 This is how a `definition` section is displayed on `HTML` or `PDF`:
-![image](https://user-images.githubusercontent.com/3258579/217130743-c9e4d070-f15d-4d5c-ab2f-f1452d94847b.png)
+
+<figure>
+<embed style="width: 100%" src="images/definition-table-example.png" alt="Definitions">
+    <figcaption></figcaption>
+</figure>
 
 This is how a singular or plural `definition` terms are used in a section text.
 
@@ -100,14 +105,13 @@ This is how a `definition` term is displayed on `HTML` and `PDF` documents.
 This is how an `abbreviation` section is written on markdown documents:
 
 ```html
- <dl>
+ <dl data-caption="Abbreviations" data-term-column-title="Term" data-description-column-title="Description">
         <dt>SH</dt>
         <dd>Standards Hub</dd>
         <dt>TS</dt>
         <dd>Technical Specification</dd>
         <dt>AD</dt>
         <dd>Architecture Document</dd>
-
  </dl>
 ```
 Where:
@@ -117,7 +121,10 @@ Where:
 
 This is how an `abbreviation` section is displayed on `HTML` or `PDF`.
 
-![image](https://user-images.githubusercontent.com/3258579/217131385-39e56ee7-6a22-411f-a863-436eacc73282.png)
+<figure>
+<embed style="width: 100%" src="images/abbreviation-table-example.png" alt="Abbrevations">
+    <figcaption></figcaption>
+</figure>
 
 This is how a singular and plural `abbreviation` terms are used in a section text.
 
