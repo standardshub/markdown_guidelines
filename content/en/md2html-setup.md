@@ -45,10 +45,27 @@ files:
 # Detailed instructions see at https://markdown.standardshub.io/md2html-setup.
 ```
 
-### New Properties:
-* `organizationName`:  represents the name of the organization.
-* `copyrightDate`:         the copyright date is defined by this property.
-* `logo`:                          this allows each document to have its own logo
-* `watermark`:               this property inserts a watermark inside of the PDF. Possible values are: "DRAFT",  "CANDIDATE", "HISTORIC", "DEPRECATED", "PRE-APPROVED", "APPROVED".
+### Properties
+* `title`
+    * Title of the document, as displayed on the front page
+* `status`
+    * Document status, e.g., `Draft`, `Candidate`, `Approved`
+* `version`
+    * Document version, e.g., `V1.0.3`
+* `organizationName`:
+    * Represents the name of the organization.
+* `date`
+    * In format `YYYY-MM-DD`
+* `copyrightDate`         
+    * The copyright date is defined by this property.
+* `logo`
+    * This allows each document to have its own logo
+* `documentName`
+    * File name without extension format. See example above
+* `watermark`
+    * This property inserts a watermark inside of the PDF. 
+    * Possible values are: "DRAFT",  "CANDIDATE", "HISTORIC", "DEPRECATED", "PRE-APPROVED", "APPROVED".
+* `files`
+    * This property represents a list of documents in the markdown that needs to be combined to create a final document.
 
 <alert>In MD2HTML v2.0, the `License.md` contains the license defined for that particular document. It can be inserted at the top of the list of files or at the botoom.</alert>
