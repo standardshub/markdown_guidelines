@@ -13,7 +13,6 @@ The file `index.md` MUST exist inside of each Technical  document folder.
 
 Example of a `index.md` file, MD2HTML v1.x:
 
-```
 ---
 title: "Lightweight Machine to Machine Technical Specification: Core"
 status: "Approved"
@@ -36,7 +35,7 @@ files:
 - Appendix_L.md
 - Appendix_M.md
 ---
-```
+
 * `title`
     * Title of the document, as displayed on the front page
 * `status`
@@ -55,8 +54,7 @@ files:
 In v2.0 the file name extension was changed from `.md` to `.yaml`. The `index.yaml` file MUST be added to the root folder for each document.
 
 Example of an `index.yaml` file for MD2HTML v2.x:
-
-```        
+        
 ---	
 title: "Lightweight Machine to MachineTechnical Specification: Core"
 status: "Approved"
@@ -84,7 +82,8 @@ files:
 - Appendix_L.md
 - Appendix_M.md
 ---
-```
+# Detailed instructions see at https://markdown.standardshub.io/md2html-setup.
+
 ### New Properties:
 * `organizationName`:  represents the name of the organization.
 * `copyrightDate`:         the copyright date is defined by this property.
