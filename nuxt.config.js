@@ -8,5 +8,8 @@ export default theme({
   },
   router: { 
     base: '' 
-  }
+  },
+  plugins: [
+    '~~/plugins/gtag',
+  ]
 })
