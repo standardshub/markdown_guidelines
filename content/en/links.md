@@ -14,22 +14,32 @@ The usage of `links` allows us to connect text inside and across sections, as we
 ```md
 [Markdown Guide](https://www.markdownguide.org)
 ```
+* Adding titles
+[I'm an inline-style link with a title](https://www.omaspecworks.org/ "OMA Homepage")
 
-* Additional link styles include:
-
-```md
-[I'm an inline-style link](https://www.omaspecworks.org/)
-```
-
-or
-
+Written in markdown:
 ```md
 [I'm an inline-style link with a title](https://www.omaspecworks.org/ "OMA Homepage")
 ```
 
-* URLs and URLs in angle brackets will automatically be converted to links e.g.
+* Additional link styles include emphasizing and denoting links as code:
+**[Markdown Guide](https://www.markdownguide.org)** or *[Markdown Guide](https://www.markdownguide.org)*, see [`markdown code`](#markdowncode)
+
+* Written in markdown:
+```md
+**[Markdown Guide](https://www.markdownguide.org)**
+*[Markdown Guide](https://www.markdownguide.org)*
+See [`markdown code`](#markdowncodecode)
+```
+
+* URLs and emails in angle brackets will automatically be converted to links e.g.
 
 https://www.omaspecworks.org/
+
+* Written in markdown:
+```md
+<https://www.omaspecworks.org/>
+```
 
 ## Extended Links
 * [To Sections](#to-sections)
