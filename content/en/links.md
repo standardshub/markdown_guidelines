@@ -18,6 +18,11 @@ The usage of `links` allows us to connect text inside and across sections, as we
 
 [Markdown Guide](https://www.markdownguide.org)<base target="_blank">
 
+* This is how a `link` is written in markdown:
+```md
+[Markdown Guide](https://www.markdownguide.org)<base target="_blank">
+```
+
 * Additional link styles include:
 
 ```md
