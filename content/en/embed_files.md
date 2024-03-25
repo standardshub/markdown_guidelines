@@ -48,30 +48,39 @@ Insert the selected document from the given repository and branch inside the `HT
 The Object file is stored in the **LwM2M-Object** repository, in the **master** branch (which is omitted), and inside a folder called **Device**.
 
 ### :SUPP1
-This instruction inserts an `XML` file stored on a `branch` or `release tag` into a `HTML` document.
+This instruction inserts an `XML` file into HTML from the specified repository, chosen `branch` or `release tag`, and selected`folder`.
 
 ```md
-{:supp1 [Repository_Name]/[Branch_Name] | [Release_Name] [File_Name.xml]}
+{:supp1 [Repository_Name]/[Branch_Name] | [Release_Name] [Folder_Name]/[File_Name.xml]}
 ```
 
 ### :SUPP1 Examples:
-In this example, the file to insert is stored in a `branch`.
+To insert a file from a root folder of a chosen `branch`, utilize the command below.
 
 ```md
-{:supp1 objects-lwm2m/dev LWM2M_Access_Control.xml}
+{:supp1 objects-lwm2m/master 25.xml}
 ```
 * `Repository_Name`: **objects-lwm2m**
-* `Branch_Name`:     **dev**
-* `File_Name`:       **LWM2M_Access_Control.xml**
+* `Branch_Name`:     **master**
+* `File_Name`:       **25.xml**
+
+In this example, the file to insert is stored in a `release tag` instead of a branch..
 
 ```md
-{:supp1 objects-lwm2m/v1_1 LWM2M_Access_Control.xml}
+{:supp1 EventLog/V2_1-20230131-A SUP/20.xml}
 ```
-In this example, the file to insert is stored in a `release tag` instead of a branch.
+* `Repository_Name`: **EventLog**
+* `Release_Name`:    **V2_1-20230131-A**
+* `File_Name`:       **20.xml**
 
-* `Repository_Name`: **objects-lwm2m**
-* `Release_Name`:    **v1_1**
-* `File_Name`:       **LWM2M_Access_Control.xml**
+If the file to insert is stored in a `folder` use the following.
+
+```md
+{:supp1 EventLog/development SUP/20.xml}
+```
+* `Repository_Name`: **EventLog**
+* `Folder_Name`:    **SUP**
+* `File_Name`:       **20.xml**
 
 ### :SUPP3
 This instruction inserts any file type (.xml; .xsd; .html; etc.), from a selected repository and branch and optional `folder` into an `HTML` document.
