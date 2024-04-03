@@ -79,6 +79,7 @@ If the file to insert is stored in a `folder` use the following.
 {:supp1 EventLog/development SUP/20.xml}
 ```
 * `Repository_Name`: **EventLog**
+* `Branch_Name`: **development**
 * `Folder_Name`:    **SUP**
 * `File_Name`:       **20.xml**
 
