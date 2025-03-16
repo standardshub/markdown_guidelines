@@ -80,6 +80,7 @@ If the file to insert is stored in a `folder` use the following.
 ```
 * `Repository_Name`: **EventLog**
 * `Branch_Name`: **development**
+* `Branch_Name`:    **development**
 * `Folder_Name`:    **SUP**
 * `File_Name`:       **20.xml**
 
