@@ -14,6 +14,14 @@ The usage of `links` allows us to connect text inside and across sections, as we
 ```md
 [Markdown Guide](https://www.markdownguide.org)
 ```
+* To create a `link` written in markdown that opens in a new tab or window:
+
+[Markdown Guide](https://www.markdownguide.org)<base target="_blank">
+
+* This is how a `link` is written in markdown:
+```md
+[Markdown Guide](https://www.markdownguide.org)<base target="_blank">
+```
 
 * Additional link styles include:
 
