@@ -33,7 +33,7 @@ Use this to link to web pages, documentation, or another Markdown file.
 ```
 **Adding a title to a link (tooltip shown on hover)**: [I'm an inline-style link with a title](https://www.omaspecworks.org/ "OMA Homepage")
 
-✍️ In Markdown Syntax:
+✍️ *In Markdown Syntax*:
 ```md
 [I'm an inline-style link with a title](https://www.omaspecworks.org/ "OMA Homepage")
 ```
@@ -150,12 +150,12 @@ https://www.omaspecworks.org/
 ```html
 <a href="">Figure Figure-Title</a>
 ```
-This is how it is displayed: <a href="">Figure Figure-Title</a>
+*This is how it is displayed*: <a href="">Figure Figure-Title</a>
 
 * Prefix the word `Figure` to the `Figure-Title`.
 * `Figure-Title` is the text enclosed by `<figcaption>` tags.
 
-✍️ For example, *using HTML*:
+✍️ *For example, using HTML*:
 ```html
 <a href="">Figure Client Registration Interface example flows</a>
 ```
@@ -215,7 +215,7 @@ This is how it is displayed: <a href="">Figure Figure-Title</a>
 * Prefix the world `Table` in front of `Table-Title`.
 * `Table-Title` is the text between the `<caption>` tags.
 
-✍️ For example, *using HTML*:
+✍️ *For example, using HTML*:
 ```html
 <a href="">Table Object Version usage rules</a>
 ```
