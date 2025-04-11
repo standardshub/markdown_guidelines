@@ -6,13 +6,13 @@ category: MD2HTML App
 ---
 
 ## MD2HTML v2.x
+Each Technical document folder MUST include an `index.md` file.
 
-The file `index.md` MUST exist inside of each Technical  document folder. 
+⚠️ Important:
+In MD2HTML version 2.0, the index file format changed from `.md` to `.yaml`.
+The old `index.md` file is no longer valid and MUST be replaced with `index.yaml` in the root folder for each document.
 
-In v2.0 the file name extension was changed from `.md` to `.yaml`.
-The `index.yaml` file MUST be added to the root folder for each document.
-
-Example of an `index.yaml` file for MD2HTML v2.x:
+📄 *Example of an `index.yaml` file for MD2HTML v2.x*:
         
 ```
 ---
@@ -45,27 +45,20 @@ files:
 # Detailed instructions see at https://markdown.standardshub.io/md2html-setup.
 ```
 
-### Properties
-* `title`
-    * Title of the document, as displayed on the front page
-* `status`
-    * Document status, e.g., `Draft`, `Candidate`, `Approved`
-* `version`
-    * Document version, e.g., `V1.0.3`
-* `organizationName`:
-    * Represents the name of the organization.
-* `date`
-    * In format `YYYY-MM-DD`
-* `copyrightDate`         
-    * The copyright date is defined by this property.
-* `logo`
-    * This allows each document to have its own logo
-* `documentName`
-    * File name without extension format. See example above
-* `watermark`
-    * This property inserts a watermark inside of the PDF. 
-    * Possible values are: "DRAFT",  "CANDIDATE", "HISTORIC", "DEPRECATED", "PRE-APPROVED", "APPROVED".
-* `files`
-    * This property represents a list of documents in the markdown that needs to be combined to create a final document.
+### 🔧 Properties
+
+| Property           | Description |
+|--------------------|-------------|
+| `title`            | Title of the document, as displayed on the front page. |
+| `status`           | Publication status — e.g., `Draft`, `Candidate`, `Approved`. |
+| `version`          | Document version, e.g., `1.2`, `V1.0.3`. |
+| `organizationName` | Full name of the publishing organization. |
+| `date`             | Publication date in `YYYY-MM-DD` format. |
+| `copyrightDate`    | Year of copyright (e.g., `2024`). |
+| `logo`             | Path to the logo file (optional, used on front pages). |
+| `documentName`     | Filename used to generate the final document (without extension). |
+| `watermark`        | Watermark to apply in the PDF. Options: `"DRAFT",  "CANDIDATE", "HISTORIC", "DEPRECATED", "PRE-APPROVED", "APPROVED"`. |
+| `files`            |A sequential list of Markdown files required to compile into a complete, final document. Must include the main content and any appendices. |
+
 
 <alert>In MD2HTML v2.0, the `License.md` contains the license defined for that particular document. It can be inserted at the top of the list of files or at the botoom.</alert>
