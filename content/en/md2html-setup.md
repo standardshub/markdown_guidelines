@@ -6,7 +6,7 @@ category: MD2HTML App
 ---
 
 ## MD2HTML v2.x
-Each technical document folder MUST include an `index.md` file.
+Each Technical document folder MUST include an `index.md` file.
 
 ⚠️ Important:
 In MD2HTML version 2.0, the index file format changed from `.md` to `.yaml`.
