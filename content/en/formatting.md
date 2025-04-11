@@ -6,38 +6,36 @@ category: MD2HTML App
 ---
 This section explains how to use constructors to manage document formats.
 
-* Formatting instructions should be done using CSS and NOT `MD` or `HTML.`
-* No style should be introduced on any of the HTML constructors.
+* **All formatting should be handled using CSS**, NOT `MD` or `HTML.`
+* **Do not apply custom styles** to any HTML constructors.
+
 
 ## Page Break
 
-* To introduce a page break insert:
+✍️ *To insert a page break, use the following syntax*:
 
 ```md
 {:page-break}
 ```
 
-* Only use at the start of a line.
-* Use where markdown is expected.
-* Ensure `{:page-break}` is followed by a blank line.
+* Must be placed at the beginning of a line.
+* Only works where Markdown is expected (not inside HTML blocks).
+* Follow the constructor with a blank line to ensure proper rendering.
 
 ## Horizontal Rule
 
-
-This is how a `horizontal rule` is displayed:
-
----
-This is how a `horizontal rule` is written in markdown:
-
+✍️ *Markdown Syntax*
 ```md
 ---
 ```
+*This is how a `horizontal rule` is displayed*:
+
+---
+
 ## Ignore Markdown Formatting
 
-* To ignore markdown formatting, insert a  backslash `\` character before the markdown character e.g.
+✍️ *To ignore Markdown formatting, insert a  backslash `\` character before the Markdown character, e.g.*
 
 ```md
 \[RFC6655\]
 ```
-
-\[RFC6655\]
