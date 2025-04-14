@@ -5,19 +5,24 @@ position: 110
 category: MD2HTML App
 ---
 
-This section describes the markdown constructors that define the document's structure.
+This section describes the Markdown constructors that define the document's structure.
 
 ## Front Page
-The document `index.md` or `index.yaml` contain the information displayed on the document's first page. In version MD2HTML v2.0, these properties are extended. See [Setup Index File](/md2html-setup) for further details.
+The `index.md` or `index.yaml` contains the metadata displayed on the document's first page. Starting with MD2HTML v2.0, these properties have been extended.  
+See [Setup Index File](/md2html-setup) for further details.
+
 
 ## Legal Disclaimer
 ### MD2HTML v1.x
-In this version, the legal disclaimer text is inserted automatically by the md2html tool inside the TS document when generating the HTML document.
+In version 1.x, the legal disclaimer text is inserted automatically by the MD2HTML tool inside the TS document when generating the HTML document.
 
 <alert> OMA-License.txt file is added to the repository as a reference. The MD2HTML tool uses its License file.</alert>
 
+
 ### MD2HTML v2.x
-In this version of the tool, the license document is added to the list of files. See [Setup Index File](/md2html-setup) for further details. 
+
+In version 2.x, the license document is added to the list of files.  
+See [Setup Index File](/md2html-setup) for more information. 
 
 ## Header
 The MD2HTML tool automatically adds a header to generated PDFs.
@@ -31,12 +36,13 @@ The MD2HTML tool automatically adds a footer to generated PDFs.
 * Table of Tables
 * Table of Figures
 
-This content doesn't exist in the markdown documents.
-It is constructed automatically by the conversion tool, and only appears in the HTML & PDF generated documents.
+These indexes are not included in the Markdown source files.
+It is constructed automatically by the conversion tool, and only visible in the HTML & PDF generated documents.
 
+Recommendations:  
 * Choose unique titles for the sections, subsections, tables, and figures.
-* Avoid using special characters in the titles. It makes it difficult to establish links inside of the document to a particular section.
-* Try to create titles for sections, figures, and tables that are short and without special characters.
+* Avoid special characters in titles to improve internal linking reliability.
+* Keep titles short and clear, avoiding unnecessary punctuation.
 
 
 ## Scope
@@ -49,18 +55,16 @@ It is constructed automatically by the conversion tool, and only appears in the 
 
 ## Terminology and Conventions
 ### Conventions
-The features described in this section are only available in MD2HTML v2.1.x. 
-Previous versions cannot render `definitions` and `descriptions` features as described here.
+The features in this section are available in MD2HTML v2.1.x and later.
+Earlier versions do not support `definitions` and `abbreviations` as described here.
 
-
-
-* The first step is to create a section on the markdown document to store `definitions` and `abbreviations`. We recommend calling this section `Terminology and Conventions`. 
+* Add a section titled `Terminology and Conventions` to store `definitions` and `abbreviations`.
 * This new section should contain two subsections:
-   * `Definitions`, and 
-   * `Abbreviations`.
+  * `Definitions` and
+  * `Abbreviations`
 
 ### Definitions
-This is how a `definition` section is defined on the markdown document:
+✍️ *Here is how to define a list of `definitions` in a Markdown file using HTML syntax*:
 
 ```html
 
@@ -76,14 +80,14 @@ Where:
     `<dt>` = definition title;
     `<dd>` = definition description.
 
-This is how a `definition` section is displayed on `HTML` or `PDF`:
+*This is how a `definition` section is displayed on `HTML` or `PDF`*:
 
 <figure>
 <embed style="width: 100%" src="images/definition-table-example.png" alt="Definitions">
     <figcaption></figcaption>
 </figure>
 
-This is how a singular or plural `definition` terms are used in a section text.
+✍️ *In HTML syntax, this is how a singular or plural `definition` terms are used in a section text*:
 
 ```html
 bla, bla, bla, 
@@ -95,14 +99,13 @@ Network security is monitored by <a title= "firewall">firewalls</a> which contro
 * To use a `definition` term in plural, insert the `title` property inside of the anchor element, and the plural inside of the anchor `<a>`, e.g. `<a title= "firewall">firewalls</a>`.
 * When positioning a `mouse pointer` over the `definition` word, a `tooltip` is displayed with the `definition` in singular and a click on the word will render the page on the `definition` term.
 
-
-This is how a `definition` term is displayed on `HTML` and `PDF` documents.
+*This is how a `definition` term is displayed on `HTML` and `PDF` documents*.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131695-5f364607-2a04-47bd-a538-d223b2be895e.png)
 
 
 ### Abbreviations
-This is how an `abbreviation` section is written on markdown documents:
+✍️ *Here is how to define a list of `abbreviations` in HTML*:
 
 ```html
  <dl data-caption="Abbreviations" data-term-column-title="Term" data-description-column-title="Description">
@@ -119,14 +122,14 @@ Where:
     `<dt>` = definition title;
     `<dd>` = definition description.
 
-This is how an `abbreviation` section is displayed on `HTML` or `PDF`.
+*This is how an `abbreviation` section is displayed on `HTML` or `PDF`*.
 
 <figure>
 <embed style="width: 100%" src="images/abbreviation-table-example.png" alt="Abbrevations">
     <figcaption></figcaption>
 </figure>
 
-This is how a singular and plural `abbreviation` terms are used in a section text.
+✍️ *This is how a singular and plural `abbreviation` terms are used in a section text*.
 
 ```html
 bla, bla, bla, 
@@ -137,7 +140,7 @@ such as <abbr title= "TS">TS's</abbr> and <abbr title= "AD">AD's</abbr>
 * To use an `abbreviation` term in plural, insert the `title` property with a singular value and the plural value inside of the `<anchor>`, e.g. `<abbr title= "TS">TS's</abbr>`.
 * When positioning a `mouse pointer` over the `abbreviation` word, a `tooltip` is displayed with the `abbreviation` expanded.
 
-* This is how an `abbreviation` term is displayed on `HTML` and `PDF` document.
+* *This is how an `abbreviation` term is displayed on `HTML` and `PDF` document*.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131339-f6f4be08-4319-41af-bbc9-f6da5970a248.png)
 
