@@ -46,12 +46,41 @@ Recommendations:
 
 
 ## Scope
+The `Scope` section defines the purpose, boundaries, and intended use of the document. It provides a clear statement about what the document covers and, if applicable, what it does not cover.
+* Clearly state the objective of the document.
+* Identify the target audience.
+* If applicable, briefly list the topics excluded from the document’s scope.
+* Avoid detailed technical descriptions — those belong in later sections.
 
 ## References
+The References section must include both `Normative` and `Informative` references, each in its own subsection. Each subsection should contain a reference table using HTML constructors to ensure proper formatting in the final output (HTML or PDF).
 
 ### Normative References
+Normative references are mandatory sources that define requirements or standards used in the document.
 
 ### Informative References
+Informative references provide additional context or background but are not required to implement the specification.
+
+✍️ *Use the same HTML structure for both `Informative` and `Normative` References, as in the example*:
+
+```html
+<dl data-caption="Informative Reference" data-term-column-title="Reference" data-description-column-title="Details">
+    <dt>[OMADICT]</dt>
+    <dd>"Dictionary for OMA Specifications", Open Mobile Alliance™, OMA-ORG-Dictionary-V2_9, URL:http://www.openmobilealliance.org/</dd>
+</dl>
+```
+*Displayed*:
+![image](https://github.com/user-attachments/assets/78de3231-0afb-413e-b003-276069142aa3)
+
+✅ DOs
+* Use `dl`, `dt`, and `dd` HTML tags to define reference lists.
+* Use square brackets for reference IDs, e.g., [ABC].
+* Include full citation details: `title`, `author(s)`, `date`, and `URL`.
+* Separate Normative and Informative references into different sections.
+
+❌ DON'Ts
+* Don’t use Markdown lists or tables for references.
+* Don’t use inline Markdown links.
 
 ## Terminology and Conventions
 ### Conventions
@@ -87,7 +116,7 @@ Where:
     <figcaption></figcaption>
 </figure>
 
-✍️ *In HTML syntax, this is how a singular or plural `definition` terms are used in a section text*:
+✍️ *In HTML, this is how a singular or plural `definition` terms are used in a section text*:
 
 ```html
 bla, bla, bla, 
@@ -102,7 +131,6 @@ Network security is monitored by <a title= "firewall">firewalls</a> which contro
 *This is how a `definition` term is displayed on `HTML` and `PDF` documents*.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131695-5f364607-2a04-47bd-a538-d223b2be895e.png)
-
 
 ### Abbreviations
 ✍️ *Here is how to define a list of `abbreviations` in HTML*:
@@ -140,11 +168,23 @@ such as <abbr title= "TS">TS's</abbr> and <abbr title= "AD">AD's</abbr>
 * To use an `abbreviation` term in plural, insert the `title` property with a singular value and the plural value inside of the `<anchor>`, e.g. `<abbr title= "TS">TS's</abbr>`.
 * When positioning a `mouse pointer` over the `abbreviation` word, a `tooltip` is displayed with the `abbreviation` expanded.
 
-* *This is how an `abbreviation` term is displayed on `HTML` and `PDF` document*.
+*This is how an `abbreviation` term is displayed on `HTML` and `PDF` document*.
 
 ![image](https://user-images.githubusercontent.com/3258579/217131339-f6f4be08-4319-41af-bbc9-f6da5970a248.png)
 
 <alert>MD2HTML uses the same constructors `dl`, `dt`, `dd` to write a <i>definition</i> or an <i>abbreviation.</i></alert>
 
 ## Introduction
+
+The Introduction should provide a clear and concise overview of the specification, outlining its purpose, scope, and relevance. It sets the context for the reader by explaining what the document covers, the motivation behind it, and the problem it aims to solve—without diving into technical implementation details.
+
+✅ DOs
+* Start with a brief summary of the problem or requirement the specification aims to address.
+* Mention the purpose and scope of the document.
+* Highlight any key concepts or functionality covered, keeping the language neutral, formal, and concise.
+
+❌ DON'Ts
+* Don’t include detailed technical explanations (save that for later sections).
+* Don’t repeat content from other sections verbatim.
+* Don’t assume prior knowledge of internal frameworks or acronyms without context.
 
