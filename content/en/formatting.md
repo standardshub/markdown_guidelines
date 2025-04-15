@@ -10,7 +10,7 @@ This section explains how to use constructors to manage document formats.
 * **Do not apply custom styles** to any HTML constructors.
 
 
-## Page Break
+## 📄 Page Break
 
 ✍️ *To insert a page break, use the following syntax*:
 
@@ -22,7 +22,7 @@ This section explains how to use constructors to manage document formats.
 * Only works where Markdown is expected (not inside HTML blocks).
 * Follow the constructor with a blank line to ensure proper rendering.
 
-## Horizontal Rule
+## ⬇️ Horizontal Rule
 
 ✍️ *Markdown Syntax*
 ```md
@@ -32,7 +32,7 @@ This section explains how to use constructors to manage document formats.
 
 ---
 
-## Ignore Markdown Formatting
+## 🚫 Ignoring Markdown Formatting
 
 ✍️ *To ignore Markdown formatting, insert a  backslash `\` character before the Markdown character, e.g.*
 
