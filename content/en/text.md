@@ -72,12 +72,12 @@ Markdown text inside of an HTML constructor will render incorrectly.
 <alert type="warning">These HTML tags are only used when the text is inside an HTML table.</alert>
 
 ### Bold
-✍️ *This is how `strong,` the equivalent to `bold` in Markdown, is written in `HTML.`
+✍️ *This is how `strong,` the equivalent to `bold` in Markdown, is written in `HTML`*:
 
 ```html
 <strong>MD2HTML</strong>
 ```
-*This is how bold text is rendered in HTML*:
+*This is how bold text is rendered in HTML*:  
 <strong>MD2HTML</strong>
 
 ### Italic 
@@ -86,7 +86,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 ```html
 <em>MD2HTML</em>
 ```
-* Displayed output:
+*Displayed output*:  
 <em>MD2HTML</em>
 
 ### Bold & Italic 
@@ -95,7 +95,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 ```html
 <strong>MD2HTML and <em>MD2HTML</em></strong>
 ```
-*This is how it is displayed*:
+*This is how it is displayed*:  
 <strong>MD2HTML and <em>MD2HTML</em></strong>
 
 ### Highlighted
@@ -104,8 +104,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 ```html
 <mark>MD2HTML</mark>
 ```
-*This is how it is rendered*:
-
+*This is how it is rendered*:  
 <mark>MD2HTML</mark>
 
 ### Strikethrough
@@ -113,7 +112,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 ```html
 <del>MD2HTML</del>
 ```
-*Rendered in `HTML`*:
+*Rendered in `HTML`*:  
 <del>MD2HTML</del>
 
 ### Small	
@@ -121,7 +120,7 @@ Markdown text inside of an HTML constructor will render incorrectly.
 ```html
 <small>MD2HTML</small>
 ```
-*Rendered in HTML*:
+*Rendered in HTML*:  
 Compared with MD2HTML, <small>MD2HTML</small> looks like this.
 
 ### Subscripted
@@ -129,7 +128,7 @@ Compared with MD2HTML, <small>MD2HTML</small> looks like this.
 ```html
 <sub>MD2HTML</sub>
 ```
-*Rendered in HTML*:
+*Rendered in HTML*:  
 Compared with other text <sub>MD2HTML</sub>, this is how it looks.
 
 ### Superscripted
@@ -137,5 +136,5 @@ Compared with other text <sub>MD2HTML</sub>, this is how it looks.
 ```html
 <sup>MD2HTML</sup>
 ```
-*This is how it is rendered*:
+*This is how it is rendered*:  
 Compared with other text <sup>MD2HTML</sup>, this is how it looks.
