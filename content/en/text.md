@@ -39,7 +39,7 @@ or
 _MD2HTML_
 ```
 
-This is how `italic` text renders:
+*This is how `italic` text renders*:  
 
 _MD2HTML_
 
@@ -62,7 +62,7 @@ _MD2HTML_
 ```md
 ~~MD2HTML.~~
 ```
-*This is how it is displayed*:
+*This is how it is displayed*:  
 ~~MD2HTML~~
 
 ## HTML Text
